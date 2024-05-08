@@ -132,4 +132,9 @@ public class InimgoScript : MonoBehaviour
             playerScript.somaDeInimigosConvertidos += 1;
         }
     }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(eixo.position, raioDeGuarda);
+    }
 }
