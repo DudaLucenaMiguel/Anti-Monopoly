@@ -71,7 +71,7 @@ public class PlayerScript : MonoBehaviour
 
         Atirar();
 
-        GerenciarVitoria();
+        GerenciarJogo();
     }
     public void Movimentar()
     {
@@ -124,6 +124,10 @@ public class PlayerScript : MonoBehaviour
         if (vidaAtual <= 0)
         {
             gameObject.SetActive(false);
+
+            //abrir painel de GameOver
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
         }
     }
     void GerenciarInimigos()
@@ -136,12 +140,13 @@ public class PlayerScript : MonoBehaviour
             inimigosScript[i] = inimigos[i].GetComponent<InimgoScript>();
         }
     }
-    void GerenciarVitoria()
+    void GerenciarJogo()
     {
         contadorDeInimigos.text = $"Número de inimigos convertidos: {somaDeInimigosConvertidos}/{numeroDeInimigos}";
 
         if(somaDeInimigosConvertidos == inimigos.Length)
         {
+            //pular para a proxima cena
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

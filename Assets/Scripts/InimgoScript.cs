@@ -15,7 +15,7 @@ public class InimgoScript : MonoBehaviour
     public Transform[] wayPoints;
     int index;
 
-    public float raioDeGuarda;
+    [Range(0, 20)] public float raioDeGuarda;
     public float distanciaDeAtaque;
     public float velocidadeDeGiro = 5;
 
@@ -37,6 +37,9 @@ public class InimgoScript : MonoBehaviour
     public int danoSofrido;
     PlayerScript playerScript;
 
+    float distanciaPlayerBase;
+    float distanciaPlayerEnemy;
+
 
     void Start()
     {
@@ -53,8 +56,8 @@ public class InimgoScript : MonoBehaviour
     {
         playerScript.danoSofrido = danoCausado;
 
-        float distanciaPlayerBase = Vector3.Distance(eixo.position, player.position);
-        float distanciaPlayerEnemy = Vector3.Distance(transform.position, player.position);
+        distanciaPlayerBase = Vector3.Distance(eixo.position, player.position);
+        distanciaPlayerEnemy = Vector3.Distance(transform.position, player.position);
 
         if (distanciaPlayerBase <= raioDeGuarda && distanciaPlayerEnemy > distanciaDeAtaque)
         {
@@ -136,5 +139,10 @@ public class InimgoScript : MonoBehaviour
     {
         Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(eixo.position, raioDeGuarda);
+        if(distanciaPlayerEnemy <= raioDeGuarda)
+        {
+            Gizmos.DrawWireSphere(transform.position, distanciaDeAtaque);
+        }
+        
     }
 }
