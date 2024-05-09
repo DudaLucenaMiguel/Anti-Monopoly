@@ -8,32 +8,38 @@ public class Boss_PlayerScript : MonoBehaviour
     CharacterController CC;
     public float velocidadeDoPlayer = 10;
     Vector3 direcao;
+    float smoothTime = 0.05f;
+    float currentVelocity;
 
     //variaveis de tiro
     public Transform gatilho;
     public GameObject projetilPreFab;
     public float velocidadeDoProjetil = 20;
-    public float distanciaMaximaDoProjetil = 10;
+    public float distanciaMaximaDoProjetil;
     float tempoDeVidaDoProjetil;
-    public int danoCausado;
+    public int danoCausado = 1;
     public float frequenciaDeTiro = 0;
     [System.NonSerialized] public float timer;
 
     //variaveis de vida
     public int vidaMaxima = 100;
     public int vidaAtual;
-    public BarraDeVidaScript barraDeVida;
     public int danoSofrido;
+    public BossScript boss;
 
 
     void Start()
     {
         CC = GetComponent<CharacterController>();
+        boss = GameObject.Find("Boss").GetComponent<BossScript>();
+        vidaAtual = vidaMaxima;
     }
 
     void Update()
     {
+        boss.danoSofrido = danoCausado;
         Movimentar();
+        Rotacionar();
         Atirar();
     }
     public void Movimentar()
@@ -43,6 +49,15 @@ public class Boss_PlayerScript : MonoBehaviour
 
         direcao = new Vector3(horizontal, 0, vertical);
         CC.Move(direcao * velocidadeDoPlayer * Time.deltaTime);
+    }
+    public void Rotacionar()
+    {
+        if (direcao.magnitude >= smoothTime)
+        {
+            var targetAngle = Mathf.Atan2(direcao.x, direcao.z) * Mathf.Rad2Deg;
+            var angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref currentVelocity, smoothTime);
+            transform.rotation = Quaternion.Euler(0, angle, 0);
+        }
     }
     void Atirar()
     {
@@ -66,8 +81,7 @@ public class Boss_PlayerScript : MonoBehaviour
     {
         dano = danoSofrido;
         vidaAtual -= dano;
-        barraDeVida.AlterarBarraDeVida(vidaAtual, vidaMaxima);
-
+        
         if (vidaAtual <= 0)
         {
             gameObject.SetActive(false);

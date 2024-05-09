@@ -82,7 +82,6 @@ public class PlayerScript : MonoBehaviour
         CC.Move(direcao * velocidadeDoPlayer * Time.deltaTime);
     }
     public void Rotacionar()
-
     {
         if (direcao.magnitude >= smoothTime)
         {

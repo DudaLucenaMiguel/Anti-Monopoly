@@ -28,10 +28,10 @@ public class AgenteScript : MonoBehaviour
     void Start()
     {
         boss_player = GameObject.FindWithTag("Player").transform;
-        AI = GetComponent<NavMeshAgent>();
+        boss_playerScript = GameObject.Find("Player_Boss").GetComponent<Boss_PlayerScript>();
+        bossScript = GameObject.Find("Boss").GetComponent<BossScript>();
 
-        boss_playerScript = GameObject.Find("Player").GetComponent<Boss_PlayerScript>();
-        bossScript = GameObject.Find("Inimigo").GetComponent<BossScript>();
+        AI = GetComponent<NavMeshAgent>();
     }
 
     void Update()
@@ -80,7 +80,7 @@ public class AgenteScript : MonoBehaviour
         }
         timer += Time.deltaTime;
     }
-    public void AplicarDanoNoInimigo(int dano)
+    public void AplicarDanoNoAgente(int dano)
     {
         dano = vida;
         vida -= dano;        
@@ -88,7 +88,7 @@ public class AgenteScript : MonoBehaviour
         if (vida <= 0)
         {
             Destroy(this.gameObject);
-            bossScript.numeroDeAgentesLiquidados += 1;
+            bossScript.numeroDeAgentes -= 1;
         }
     }
 }
