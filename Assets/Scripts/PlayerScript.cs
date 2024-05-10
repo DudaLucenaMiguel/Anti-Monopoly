@@ -31,19 +31,8 @@ public class PlayerScript : MonoBehaviour
     //variaveis de vida
     public int vidaMaxima = 100;
     public int vidaAtual;
-    public BarraDeVidaScript barraDeVida;
     public int danoSofrido;
-
-    //variaveis de gerenciamento dos inimigos
-    public GameObject[] inimigos;
-    public InimgoScript[] inimigosScript;
-    public int numeroDeInimigos, somaDeInimigosConvertidos;
-    public TextMeshProUGUI contadorDeInimigos;
-
-    private void Awake()
-    {
-        GerenciarInimigos();
-    }
+    public BarraDeVidaScript barraDeVida;
     void Start()
     {
         CC = GetComponent<CharacterController>();
@@ -54,11 +43,7 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-        for (int i = 0; i < inimigosScript.Length; i++)
-        {
-            inimigosScript[i].danoSofrido = danoCausado;
-        }
-
+        
         if (Input.GetKey(KeyCode.Mouse0))
         {
             Mirar();
@@ -68,10 +53,8 @@ public class PlayerScript : MonoBehaviour
             Rotacionar();
             Movimentar();
         }
-
         Atirar();
 
-        GerenciarJogo();
     }
     public void Movimentar()
     {
@@ -127,26 +110,6 @@ public class PlayerScript : MonoBehaviour
             //abrir painel de GameOver
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
-        }
-    }
-    void GerenciarInimigos()
-    {
-        inimigos = GameObject.FindGameObjectsWithTag("Inimigo");
-        numeroDeInimigos = inimigos.Length;
-        inimigosScript = new InimgoScript[numeroDeInimigos];
-        for (int i = 0; i < inimigosScript.Length; i++)
-        {
-            inimigosScript[i] = inimigos[i].GetComponent<InimgoScript>();
-        }
-    }
-    void GerenciarJogo()
-    {
-        contadorDeInimigos.text = $"Número de inimigos convertidos: {somaDeInimigosConvertidos}/{numeroDeInimigos}";
-
-        if(somaDeInimigosConvertidos == inimigos.Length)
-        {
-            //pular para a proxima cena
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

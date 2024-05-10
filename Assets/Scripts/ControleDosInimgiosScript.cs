@@ -7,28 +7,51 @@ public class ControleDosInimgiosScript : MonoBehaviour
     
     [Range(0, 20)] public float _raiosDeGuarda;
     [Range(0, 10)] public float _distanciaDeAtaque;
-    public int _frequenciaDoTiro, _danoCausado, _vidaMaxima;
+    public int _frequenciaDoTiro, _danoCausado, _danoSofrido, _vidaMaxima;
+
     public GameObject[] inimigos;
-    public InimgoScript[] inimigosScripts;
+    InimgoScript[] inimigosScripts;
+    public int numeroDeInimigosTotais;
+    public int numeroDeInimigosLiquidados;
+
+    PlayerScript playerScript;
 
     void Start()
     {
-        inimigos = GameObject.FindGameObjectsWithTag("Inimigo");
-        inimigosScripts = new InimgoScript[inimigos.Length];
-        for(int i = 0; i<inimigosScripts.Length; i++)
-        {
-            inimigosScripts[i] = inimigos[i].GetComponent<InimgoScript>();
-        }
+        CaptarInimigos();
+        CaptarPlayer();
     }
     void Update()
     {
-        for(int i = 0; i<inimigosScripts.Length; i++)
+        GerenciarInimigos();
+    }
+    void CaptarInimigos()
+    {
+        inimigos = GameObject.FindGameObjectsWithTag("Inimigo");
+        inimigosScripts = new InimgoScript[inimigos.Length];
+        for (int i = 0; i < inimigosScripts.Length; i++)
+        {
+            inimigosScripts[i] = inimigos[i].GetComponent<InimgoScript>();
+        }
+        numeroDeInimigosTotais = inimigos.Length;
+        numeroDeInimigosLiquidados = 0;
+    }
+    void GerenciarInimigos()
+    {
+        for (int i = 0; i < inimigosScripts.Length; i++)
         {
             inimigosScripts[i].raioDeGuarda = _raiosDeGuarda;
             inimigosScripts[i].distanciaDeAtaque = _distanciaDeAtaque;
             inimigosScripts[i].frequenciaDoTiro = _frequenciaDoTiro;
             inimigosScripts[i].danoCausado = _danoCausado;
+                playerScript.danoSofrido = _danoCausado;
             inimigosScripts[i].vidaMaxima = _vidaMaxima;
+                _danoSofrido = playerScript.danoCausado;
+            inimigosScripts[i].danoSofrido = _danoSofrido;
         }
+    }
+    void CaptarPlayer()
+    {
+        playerScript = GameObject.FindWithTag("Player").GetComponent<PlayerScript>();
     }
 }

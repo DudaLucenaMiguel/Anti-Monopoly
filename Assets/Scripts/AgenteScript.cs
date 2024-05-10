@@ -6,9 +6,8 @@ using UnityEngine.AI;
 public class AgenteScript : MonoBehaviour
 {
     NavMeshAgent AI;
-    Boss_PlayerScript boss_playerScript;
     BossScript bossScript;
-    public Transform boss_player;
+    public Transform player;
     public float distanciaDeAtaque;
     public float velocidadeDeGiro = 5;
     public float velocidadeDoAgente;
@@ -27,8 +26,8 @@ public class AgenteScript : MonoBehaviour
 
     void Start()
     {
-        boss_player = GameObject.FindWithTag("Player").transform;
-        boss_playerScript = GameObject.Find("Player_Boss").GetComponent<Boss_PlayerScript>();
+        player = GameObject.FindWithTag("Player").transform;
+        
         bossScript = GameObject.Find("Boss").GetComponent<BossScript>();
 
         AI = GetComponent<NavMeshAgent>();
@@ -36,7 +35,7 @@ public class AgenteScript : MonoBehaviour
 
     void Update()
     {
-        distanciaPlayerAgente = Vector3.Distance(transform.position, boss_player.position);
+        distanciaPlayerAgente = Vector3.Distance(transform.position, player.position);
 
         if (distanciaPlayerAgente <= distanciaDeAtaque)
         {
@@ -52,7 +51,7 @@ public class AgenteScript : MonoBehaviour
         AI.isStopped = false;
         AI.stoppingDistance = distanciaDeAtaque;
         AI.speed = velocidadeDoAgente;
-        AI.SetDestination(boss_player.position);
+        AI.SetDestination(player.position);
     }
     void Atacar()
     {
@@ -62,7 +61,7 @@ public class AgenteScript : MonoBehaviour
     }
     void Rotacionar()
     {
-        Vector3 direction = (boss_player.position - transform.position).normalized;
+        Vector3 direction = (player.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, velocidadeDeGiro * Time.deltaTime);
     }
@@ -87,7 +86,7 @@ public class AgenteScript : MonoBehaviour
 
         if (vida <= 0)
         {
-            Destroy(this.gameObject);
+            gameObject.SetActive(false);
             bossScript.numeroDeAgentes -= 1;
         }
     }

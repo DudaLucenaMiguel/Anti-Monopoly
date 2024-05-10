@@ -139,7 +139,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1012064673}
+    m_TransformParent: {fileID: 1224441343}
     m_Modifications:
     - target: {fileID: 561686405254380247, guid: 26a99d8e22b485d4b9c9d5b4f6e98376, type: 3}
       propertyPath: m_Name
@@ -1135,7 +1135,7 @@ GameObject:
   - component: {fileID: 1012064673}
   - component: {fileID: 1012064674}
   m_Layer: 0
-  m_Name: Controle de Inimigos
+  m_Name: GerenciamentoDoJogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1153,11 +1153,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 196822218}
-  - {fileID: 1445398366}
-  - {fileID: 1579013390}
-  - {fileID: 358812527}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1012064674
@@ -1169,16 +1165,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1012064672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c65d08c3973aa4bafa92e5435f93e6, type: 3}
+  m_Script: {fileID: 11500000, guid: 79c73f8cd488a6c40a45c223aa60defd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _raiosDeGuarda: 10
-  _distanciaDeAtaque: 8
-  _frequenciaDoTiro: 2
-  _danoCausado: 10
-  _vidaMaxima: 25
-  inimigos: []
-  inimigosScripts: []
+  player: {fileID: 0}
+  controleDosInimgios: {fileID: 0}
+  numeroDeInimigosLiquidados: 0
+  numeroDeInimigosTotais: 0
+  contadorDeInimigos: {fileID: 520848621}
 --- !u!1 &1090226763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,7 +1284,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1012064673}
+    m_TransformParent: {fileID: 1224441343}
     m_Modifications:
     - target: {fileID: 561686405254380247, guid: 26a99d8e22b485d4b9c9d5b4f6e98376, type: 3}
       propertyPath: m_Name
@@ -1586,6 +1580,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222600746}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1224441341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1224441343}
+  - component: {fileID: 1224441342}
+  m_Layer: 0
+  m_Name: Inimigos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1224441342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224441341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c65d08c3973aa4bafa92e5435f93e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _raiosDeGuarda: 10
+  _distanciaDeAtaque: 8
+  _frequenciaDoTiro: 2
+  _danoCausado: 10
+  _danoSofrido: 0
+  _vidaMaxima: 50
+  inimigos: []
+  numeroDeInimigosTotais: 0
+  numeroDeInimigosLiquidados: 0
+--- !u!4 &1224441343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224441341}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 196822218}
+  - {fileID: 1445398366}
+  - {fileID: 1579013390}
+  - {fileID: 358812527}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1445398366 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3358090496882656144, guid: 26a99d8e22b485d4b9c9d5b4f6e98376, type: 3}
@@ -1809,7 +1860,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1012064673}
+    m_TransformParent: {fileID: 1224441343}
     m_Modifications:
     - target: {fileID: 561686405254380247, guid: 26a99d8e22b485d4b9c9d5b4f6e98376, type: 3}
       propertyPath: m_Name
@@ -1941,6 +1992,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8060129470520296401, guid: b5e99abe9e3ecdd469c3f7e6a3357a08, type: 3}
+      propertyPath: danoCausado
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060129470520296401, guid: b5e99abe9e3ecdd469c3f7e6a3357a08, type: 3}
       propertyPath: contadorDeInimigos
       value: 
       objectReference: {fileID: 520848621}
@@ -1995,7 +2050,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1012064673}
+    m_TransformParent: {fileID: 1224441343}
     m_Modifications:
     - target: {fileID: 561686405254380247, guid: 26a99d8e22b485d4b9c9d5b4f6e98376, type: 3}
       propertyPath: m_Name
@@ -2053,7 +2108,8 @@ SceneRoots:
   - {fileID: 2143753649}
   - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 822631553}
-  - {fileID: 836051512656221574}
   - {fileID: 1012064673}
   - {fileID: 1655130244}
+  - {fileID: 822631553}
+  - {fileID: 836051512656221574}
+  - {fileID: 1224441343}

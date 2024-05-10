@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Animations;
@@ -14,6 +13,8 @@ public class InimgoScript : MonoBehaviour
     public Transform eixo;
     public Transform[] wayPoints;
     int index;
+    float distanciaPlayerBase;
+    float distanciaPlayerEnemy;
 
     [Range(0, 20)] public float raioDeGuarda;
     public float distanciaDeAtaque;
@@ -35,18 +36,13 @@ public class InimgoScript : MonoBehaviour
     public int vidaAtual;
     public BarraDeVidaScript barraDeVida;
     public int danoSofrido;
-    PlayerScript playerScript;
-
-    float distanciaPlayerBase;
-    float distanciaPlayerEnemy;
-
+    ControleDosInimgiosScript controleDeInimigo;
 
     void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
+        controleDeInimigo = GameObject.Find("Inimigos").GetComponent<ControleDosInimgiosScript>();
         AI = GetComponent<NavMeshAgent>();
-
-        playerScript = GameObject.Find("Player").GetComponent<PlayerScript>();
 
         vidaAtual = vidaMaxima;
         barraDeVida.AlterarBarraDeVida(vidaAtual, vidaMaxima);
@@ -54,8 +50,6 @@ public class InimgoScript : MonoBehaviour
 
     void Update()
     {
-        playerScript.danoSofrido = danoCausado;
-
         distanciaPlayerBase = Vector3.Distance(eixo.position, player.position);
         distanciaPlayerEnemy = Vector3.Distance(transform.position, player.position);
 
@@ -132,7 +126,7 @@ public class InimgoScript : MonoBehaviour
         if (vidaAtual <= 0)
         {
             gameObject.SetActive(false);
-            playerScript.somaDeInimigosConvertidos += 1;
+            controleDeInimigo.numeroDeInimigosLiquidados += 1;
         }
     }
     private void OnDrawGizmos()

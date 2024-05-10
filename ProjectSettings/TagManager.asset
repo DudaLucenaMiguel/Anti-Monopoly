@@ -5,7 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Inimigo
-  - AgenteSpawn
+  - Agente
   layers:
   - Default
   - TransparentFX
