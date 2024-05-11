@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -8,26 +9,27 @@ public class AgenteScript : MonoBehaviour
     NavMeshAgent AI;
     BossScript bossScript;
     public Transform player;
-    public float distanciaDeAtaque;
-    public float velocidadeDeGiro = 5;
+    float distanciaPlayerAgente;
+    public float distanciaLimiteAgentePlayer = 5;
+    
+    public float velocidadeDeGiro = 50;
     public float velocidadeDoAgente;
 
     public Transform gatilho;
-    public GameObject ProjetilPreFab;
-    public float velocidadeDoAtaque = 10;
-    public float distanciaMaximaDoAtaque = 10;
-    float tempoDeVidaDoAtaque;
+    public GameObject ataquePreFab;
+    public float velocidadeDoAtaque = 20;
+    public float alcanceDoAtaque = 10;
+    float sobrevidaDoAtaque;
+    public float distanciaMinimaParaAtacar = 10;
     public int danoCausado = 5;
-    public float frequenciaDoTiro;
+    public float frequenciaDoTiro = 1;
     [System.NonSerialized] public float timer = 0;
     public int vida;
 
-    float distanciaPlayerAgente;
-
-    void Start()
+    private void Awake()
     {
         player = GameObject.FindWithTag("Player").transform;
-        
+
         bossScript = GameObject.Find("Boss").GetComponent<BossScript>();
 
         AI = GetComponent<NavMeshAgent>();
@@ -37,27 +39,22 @@ public class AgenteScript : MonoBehaviour
     {
         distanciaPlayerAgente = Vector3.Distance(transform.position, player.position);
 
-        if (distanciaPlayerAgente <= distanciaDeAtaque)
+        Perseguir();
+
+        if (distanciaPlayerAgente <= distanciaMinimaParaAtacar)
         {
-            Atacar();
+            Atirar();
         }
-        else
+        if(AI.isStopped)
         {
-            Perseguir();
+            Rotacionar();
         }
     }
     void Perseguir()
     {
-        AI.isStopped = false;
-        AI.stoppingDistance = distanciaDeAtaque;
+        AI.stoppingDistance = distanciaLimiteAgentePlayer;
         AI.speed = velocidadeDoAgente;
         AI.SetDestination(player.position);
-    }
-    void Atacar()
-    {
-        AI.isStopped = true;
-        Rotacionar();
-        Atirar();
     }
     void Rotacionar()
     {
@@ -69,13 +66,13 @@ public class AgenteScript : MonoBehaviour
     {
         if (timer > frequenciaDoTiro)
         {
-            GameObject ataque = Instantiate(ProjetilPreFab, gatilho.position, gatilho.rotation);
+            GameObject ataque = Instantiate(ataquePreFab, gatilho.position, gatilho.rotation);
             ataque.GetComponent<Rigidbody>().velocity = gatilho.forward * velocidadeDoAtaque;
 
             timer = 0;
 
-            tempoDeVidaDoAtaque = distanciaMaximaDoAtaque / velocidadeDoAtaque;
-            Destroy(ataque, tempoDeVidaDoAtaque);
+            sobrevidaDoAtaque = alcanceDoAtaque / velocidadeDoAtaque;
+            Destroy(ataque, sobrevidaDoAtaque);
         }
         timer += Time.deltaTime;
     }

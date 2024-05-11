@@ -7,14 +7,18 @@ public class AtaqueDoPlayerScript : MonoBehaviour
     InimgoScript inimigo;
     AgenteScript agente;
     BossScript boss;
+    BarreiraScript barreira;
     int dano;
 
     private void OnCollisionEnter(Collision collision)
     {
         Destroy(gameObject);
+
         inimigo = collision.transform.GetComponent<InimgoScript>();
         agente = collision.transform.GetComponent<AgenteScript>();
         boss = collision.transform.GetComponent<BossScript>();
+        barreira = collision.transform.GetComponent<BarreiraScript>();
+
         AplicarDano();
     }
     void AplicarDano()
@@ -30,6 +34,10 @@ public class AtaqueDoPlayerScript : MonoBehaviour
         if(boss != null)
         {
             boss.AplicarDanoNoBoss(dano);
+        }
+        if(barreira != null)
+        {
+            barreira.AplicarDanoNaBarreira(dano);
         }
     }
 }
