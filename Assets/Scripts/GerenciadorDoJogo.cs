@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GerenciadorDoJogo : MonoBehaviour
-{
+{ 
     public GameObject player;
     public ControleDosInimgiosScript controleDosInimgios;
 
@@ -32,13 +32,32 @@ public class GerenciadorDoJogo : MonoBehaviour
 
         if (numeroDeInimigosLiquidados == numeroDeInimigosTotais)
         {
-            //pular para a proxima cena
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GerenciarScena("MapaDoBoss");
         }
         if(!player.activeSelf)
         {
-            //gameOver
+            GerenciarScena("MenuDeFases");
+        }
+        
+        
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            GerenciarScena("MapaDoBoss");
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            GerenciarScena("MenuDeFases");
+        }
+
+    }
+    void GerenciarScena(string cena)
+    {
+        SceneManager.LoadScene(cena);
+
+        
     }
 }

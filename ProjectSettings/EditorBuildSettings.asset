@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MapaRural.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/MapaDoBoss.unity
+    guid: 229dc7557a9de9e47bce6938e57b1d3c
+  - enabled: 1
+    path: Assets/Scenes/MenuDeFases.unity
+    guid: 6d4482d8ef04b5d48beb1ad8359557ef
   m_configObjects: {}

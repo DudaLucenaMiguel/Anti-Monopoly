@@ -83,8 +83,8 @@ public class AgenteScript : MonoBehaviour
 
         if (vida <= 0)
         {
-            gameObject.SetActive(false);
             bossScript.numeroDeAgentes -= 1;
+            Destroy(gameObject);
         }
     }
 }

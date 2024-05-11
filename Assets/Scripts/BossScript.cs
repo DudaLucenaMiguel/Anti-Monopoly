@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static UnityEngine.GraphicsBuffer;
 
 public class BossScript : MonoBehaviour
@@ -76,6 +77,10 @@ public class BossScript : MonoBehaviour
     {
         if(bossReage)
         {
+            numeroDeAgentes = spawnDosAgentes.Length;
+            numeroDeBarreiras = barreiras.Length;
+            timerDoAtaque = tempoDeAtaqueDoBoss;
+
             convocarAgentes = true;
             convocarBarreiras = true;
             bossAtaca = true;
@@ -113,19 +118,16 @@ public class BossScript : MonoBehaviour
         
         if(bossAtaca == true && numeroDeAgentes == 0 && numeroDeBarreiras == 0)
         {
-            
             if (timerDoAtaque >= 0)
             {
                 timerDoAtaque -= Time.deltaTime;
                 BossAtacar();
             }
-            if (timerDoAtaque <= 0)
+            else if (timerDoAtaque <= 0)
             {
                 bossAtaca = false;
             }
         }
-        
-
     }
     void InvocarAgentes()
     {
@@ -143,7 +145,6 @@ public class BossScript : MonoBehaviour
     }
     void BossAtacar()
     {
-        Velocidade = 50;
         if(timerDoTiro > frequenciaDoTiro)
         {
             GameObject ataque = Instantiate(ataquePreFab, gatilho.position, gatilho.rotation);
@@ -165,6 +166,7 @@ public class BossScript : MonoBehaviour
         if (vidaAtual <= 0)
         {
             gameObject.SetActive(false);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
