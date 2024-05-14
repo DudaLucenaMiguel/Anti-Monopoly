@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GerenciadorDoJogo : MonoBehaviour
 { 
-    public GameObject player;
+    
     public ControleDosInimgiosScript controleDosInimgios;
-
-    public int numeroDeInimigosLiquidados;
-    public int numeroDeInimigosTotais;
+    public ControleDeScene controleDeScene;
+    
+    public int InimigosLiquidados;
+    public int InimigosTotais;
     public TextMeshProUGUI contadorDeInimigos;
+
 
     void Start()
     {
+        controleDeScene = GameObject.Find("ControleDeScenes").GetComponent<ControleDeScene>();
         controleDosInimgios = GameObject.Find("Inimigos").GetComponent<ControleDosInimgiosScript>();
-        player = GameObject.FindWithTag("Player");
     }
 
     void Update()
@@ -26,38 +29,14 @@ public class GerenciadorDoJogo : MonoBehaviour
     
     void GerenciarJogo()
     {
-        numeroDeInimigosTotais = controleDosInimgios.numeroDeInimigosTotais;
-        numeroDeInimigosLiquidados = controleDosInimgios.numeroDeInimigosLiquidados;
-        contadorDeInimigos.text = $"Número de inimigos convertidos: {numeroDeInimigosLiquidados}/{numeroDeInimigosTotais}";
+        InimigosTotais = controleDosInimgios.numeroDeInimigosTotais;
+        InimigosLiquidados = controleDosInimgios.numeroDeInimigosLiquidados;
+        contadorDeInimigos.text = $"Número de inimigos convertidos: {InimigosLiquidados}/{InimigosTotais}";
 
-        if (numeroDeInimigosLiquidados == numeroDeInimigosTotais)
+        if (InimigosLiquidados == InimigosTotais)
         {
-            GerenciarScena("MapaDoBoss");
+            controleDeScene.venceu = true;
         }
-        if(!player.activeSelf)
-        {
-            GerenciarScena("MenuDeFases");
-        }
-        
-        
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            GerenciarScena("MapaDoBoss");
-        }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            GerenciarScena("MenuDeFases");
-        }
-
     }
-    void GerenciarScena(string cena)
-    {
-        SceneManager.LoadScene(cena);
-
-        
-    }
+    
 }

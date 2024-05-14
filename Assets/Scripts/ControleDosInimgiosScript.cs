@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ControleDosInimgiosScript : MonoBehaviour
 {
-    
     [Range(0, 20)] public float _raiosDeGuarda;
     [Range(0, 10)] public float _distanciaDeAtaque;
     public int _frequenciaDoTiro, _danoCausado, _danoSofrido, _vidaMaxima;
@@ -13,17 +13,28 @@ public class ControleDosInimgiosScript : MonoBehaviour
     InimgoScript[] inimigosScripts;
     public int numeroDeInimigosTotais;
     public int numeroDeInimigosLiquidados;
+    public TextMeshProUGUI contadorDeInimigos;
 
     PlayerScript playerScript;
 
-    void Start()
+    [System.NonSerialized] public ControleDeScene controleDeScene;
+
+    private void Awake()
     {
+        controleDeScene = GameObject.Find("ControleDeScenes").GetComponent<ControleDeScene>();
+
         CaptarInimigos();
         CaptarPlayer();
+
     }
     void Update()
     {
         GerenciarInimigos();
+        ContadorDeInimgios();
+    }
+    void CaptarPlayer()
+    {
+        playerScript = GameObject.FindWithTag("Player").GetComponent<PlayerScript>();
     }
     void CaptarInimigos()
     {
@@ -49,9 +60,14 @@ public class ControleDosInimgiosScript : MonoBehaviour
                 _danoSofrido = playerScript.danoCausado;
             inimigosScripts[i].danoSofrido = _danoSofrido;
         }
+
+        if(numeroDeInimigosTotais == numeroDeInimigosLiquidados)
+        {
+            controleDeScene.venceu = true;
+        }        
     }
-    void CaptarPlayer()
+    void ContadorDeInimgios()
     {
-        playerScript = GameObject.FindWithTag("Player").GetComponent<PlayerScript>();
+        contadorDeInimigos.text = $"numero de inimigos: {numeroDeInimigosLiquidados}/{numeroDeInimigosTotais}";
     }
 }

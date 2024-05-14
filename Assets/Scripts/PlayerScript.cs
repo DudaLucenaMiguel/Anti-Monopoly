@@ -33,17 +33,23 @@ public class PlayerScript : MonoBehaviour
     public int vidaAtual;
     public int danoSofrido;
     public BarraDeVidaScript barraDeVida;
-    void Start()
+
+    [System.NonSerialized] public ControleDeScene controleDeScene;
+
+    private void Awake()
     {
         CC = GetComponent<CharacterController>();
 
+        controleDeScene = GameObject.Find("ControleDeScenes").GetComponent<ControleDeScene>();
+    }
+    void Start()
+    {
         vidaAtual = vidaMaxima;
         barraDeVida.AlterarBarraDeVida(vidaAtual, vidaMaxima);
     }
 
     void Update()
     {
-        
         if (Input.GetKey(KeyCode.Mouse0))
         {
             Mirar();
@@ -106,10 +112,7 @@ public class PlayerScript : MonoBehaviour
         if (vidaAtual <= 0)
         {
             gameObject.SetActive(false);
-
-            //abrir painel de GameOver
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
+            controleDeScene.gameOver = true;
         }
     }
 }
