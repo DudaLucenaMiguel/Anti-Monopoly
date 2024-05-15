@@ -5,15 +5,15 @@ using TMPro;
 
 public class ControleDosInimgiosScript : MonoBehaviour
 {
-    [Range(0, 20)] public float _raiosDeGuarda;
-    [Range(0, 10)] public float _distanciaDeAtaque;
+    
     public int _frequenciaDoTiro, _danoCausado, _danoSofrido, _vidaMaxima;
 
     public GameObject[] inimigos;
     InimgoScript[] inimigosScripts;
     public int numeroDeInimigosTotais;
     public int numeroDeInimigosLiquidados;
-    public TextMeshProUGUI contadorDeInimigos;
+    public TextMeshProUGUI contadorDeInimigosText;
+    
 
     PlayerScript playerScript;
 
@@ -22,19 +22,14 @@ public class ControleDosInimgiosScript : MonoBehaviour
     private void Awake()
     {
         controleDeScene = GameObject.Find("ControleDeScenes").GetComponent<ControleDeScene>();
-
+        contadorDeInimigosText = GameObject.Find("ContadorDeInimigos").GetComponent<TextMeshProUGUI>();
+        playerScript = GameObject.FindWithTag("Player").GetComponent<PlayerScript>();
         CaptarInimigos();
-        CaptarPlayer();
-
     }
     void Update()
     {
         GerenciarInimigos();
         ContadorDeInimgios();
-    }
-    void CaptarPlayer()
-    {
-        playerScript = GameObject.FindWithTag("Player").GetComponent<PlayerScript>();
     }
     void CaptarInimigos()
     {
@@ -51,14 +46,12 @@ public class ControleDosInimgiosScript : MonoBehaviour
     {
         for (int i = 0; i < inimigosScripts.Length; i++)
         {
-            inimigosScripts[i].raioDeGuarda = _raiosDeGuarda;
-            inimigosScripts[i].distanciaDeAtaque = _distanciaDeAtaque;
             inimigosScripts[i].frequenciaDoTiro = _frequenciaDoTiro;
             inimigosScripts[i].danoCausado = _danoCausado;
                 playerScript.danoSofrido = _danoCausado;
             inimigosScripts[i].vidaMaxima = _vidaMaxima;
                 _danoSofrido = playerScript.danoCausado;
-            inimigosScripts[i].danoSofrido = _danoSofrido;
+            inimigosScripts[i].danoSofrido = playerScript.danoCausado;
         }
 
         if(numeroDeInimigosTotais == numeroDeInimigosLiquidados)
@@ -68,6 +61,6 @@ public class ControleDosInimgiosScript : MonoBehaviour
     }
     void ContadorDeInimgios()
     {
-        contadorDeInimigos.text = $"numero de inimigos: {numeroDeInimigosLiquidados}/{numeroDeInimigosTotais}";
+        contadorDeInimigosText.text = $"Número de inimigos: {numeroDeInimigosLiquidados}/{numeroDeInimigosTotais}";
     }
 }

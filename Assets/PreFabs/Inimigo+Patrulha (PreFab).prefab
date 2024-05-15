@@ -82,7 +82,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 774443daa24de6040b05d9ca9b0cdba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   eixo: {fileID: 4600557193101979781}
   wayPoints:
   - {fileID: 4508109608106303362}
@@ -145,10 +144,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.75
-  m_Height: 2
+  m_Radius: 1
+  m_Height: 2.5
   m_Direction: 1
-  m_Center: {x: 0, y: 1.125, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &1238580641505830132
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +361,6 @@ GameObject:
   - component: {fileID: 666362915586841702}
   - component: {fileID: 2398482612047782283}
   - component: {fileID: 3021365960346622498}
-  - component: {fileID: 3113022575812465182}
   m_Layer: 0
   m_Name: punhal
   m_TagString: Untagged
@@ -435,27 +433,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3113022575812465182
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2666691456487978654}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4044774230951834178
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +685,6 @@ GameObject:
   - component: {fileID: 8251063836700574907}
   - component: {fileID: 210001594971292254}
   - component: {fileID: 8732294186232655113}
-  - component: {fileID: 2790508211958322068}
   m_Layer: 0
   m_Name: cano
   m_TagString: Untagged
@@ -781,27 +757,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2790508211958322068
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5784869107562713133}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6356326136664198896
 GameObject:
   m_ObjectHideFlags: 0

@@ -33,19 +33,20 @@ public class PlayerScript : MonoBehaviour
     public int vidaAtual;
     public int danoSofrido;
     public BarraDeVidaScript barraDeVida;
+    public bool morreu = false;
 
-    [System.NonSerialized] public ControleDeScene controleDeScene;
+   
 
     private void Awake()
     {
-        CC = GetComponent<CharacterController>();
-
-        controleDeScene = GameObject.Find("ControleDeScenes").GetComponent<ControleDeScene>();
+        CC = GetComponent<CharacterController>(); 
     }
     void Start()
     {
         vidaAtual = vidaMaxima;
         barraDeVida.AlterarBarraDeVida(vidaAtual, vidaMaxima);
+
+        Time.timeScale = 1;
     }
 
     void Update()
@@ -112,7 +113,8 @@ public class PlayerScript : MonoBehaviour
         if (vidaAtual <= 0)
         {
             gameObject.SetActive(false);
-            controleDeScene.gameOver = true;
+            morreu = true;
+            
         }
     }
 }

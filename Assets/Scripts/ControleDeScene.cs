@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ControleDeScene : MonoBehaviour
-{ 
+{
+    public PlayerScript playerScript;
+
     public GameObject painelDeGameOver;
     public GameObject painelDePause;
     public GameObject botaoDePause;
@@ -14,6 +16,10 @@ public class ControleDeScene : MonoBehaviour
 
     public string proximaScene;
 
+    private void Awake()
+    {
+        playerScript = GameObject.Find("Player").GetComponent<PlayerScript>();
+    }
     void Start()
     {
         Time.timeScale = 1;
@@ -25,15 +31,7 @@ public class ControleDeScene : MonoBehaviour
     }
     void Update()
     {
-        if(gameOver)
-        {
-            AbrirPainelDeGameOver();
-        }
-        if(venceu)
-        {
-            ProximaScena(proximaScene);
-        }
-        
+        GerenciarJogo();
         Teclado();
     }
     void Teclado()
@@ -51,6 +49,13 @@ public class ControleDeScene : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P) && !painelDeGameOver.activeSelf)
         {
             AbrirPainelDePause();
+        }
+        if(painelDePause.activeSelf || painelDeGameOver.activeSelf)
+        {
+            if(Input.GetKeyDown(KeyCode.Q))
+            {
+                Quit();
+            }
         }
     }
     public void ProximaScena(string cena)
@@ -104,5 +109,23 @@ public class ControleDeScene : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+    }
+    void GerenciarJogo()
+    {
+        if(playerScript.morreu == true)
+        {
+            gameOver = true;
+        }
+
+        if (gameOver)
+        {
+            AbrirPainelDeGameOver();
+        }
+
+        if (venceu)
+        {
+            ProximaScena(proximaScene);
+        }
+
     }
 }

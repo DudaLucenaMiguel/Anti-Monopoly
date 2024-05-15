@@ -16,10 +16,6 @@ public class MenuInicialScript : MonoBehaviour
     {
         
     }
-    public void Play()
-    {
-        painelInicial.SetActive(false);
-    }
     public void ProximaScena(string SceneDestino)
     {
         SceneManager.LoadScene(SceneDestino);

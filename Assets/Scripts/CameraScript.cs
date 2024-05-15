@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    public Transform target;
+    public Transform player;
     private Vector3 _offset;
     public float smoothTime;
     private Vector3 _currentvelocity = Vector3.zero;
 
     private void Awake()
     {
-        _offset = transform.position - target.position;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        _offset = transform.position - player.position;
     }
 
     private void LateUpdate()
     {
-        var targetPosition = target.position + _offset;
+        var targetPosition = player.position + _offset;
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref _currentvelocity, smoothTime);
     }
 }

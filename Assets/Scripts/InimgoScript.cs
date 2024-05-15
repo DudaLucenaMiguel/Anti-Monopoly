@@ -7,9 +7,9 @@ using UnityEngine.Animations;
 
 public class InimgoScript : MonoBehaviour
 {
-    NavMeshAgent AI;
+    [System.NonSerialized] NavMeshAgent AI;
 
-    public Transform player;
+    [System.NonSerialized] public Transform player;
     public Transform eixo;
     public Transform[] wayPoints;
     int index;
@@ -17,7 +17,7 @@ public class InimgoScript : MonoBehaviour
     float distanciaPlayerEnemy;
 
     [Range(0, 20)] public float raioDeGuarda;
-    public float distanciaDeAtaque;
+    [Range(0, 10)] public float distanciaDeAtaque;
     public float velocidadeDeGiro = 5;
 
     public float velocidadeAoAndar = 6;
