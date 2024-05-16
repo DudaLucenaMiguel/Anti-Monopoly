@@ -36,11 +36,6 @@ public class ControleDeScene : MonoBehaviour
     }
     void Teclado()
     {
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            ProximaScena(proximaScene);
-            PausePlay();
-        }
         if (Input.GetKeyDown(KeyCode.R))
         {
             Reset();

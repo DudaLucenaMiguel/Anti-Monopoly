@@ -61,6 +61,6 @@ public class ControleDosInimgiosScript : MonoBehaviour
     }
     void ContadorDeInimgios()
     {
-        contadorDeInimigosText.text = $"Número de inimigos: {numeroDeInimigosLiquidados}/{numeroDeInimigosTotais}";
+        contadorDeInimigosText.text = $"Inimigos Liquidados: {numeroDeInimigosLiquidados}/{numeroDeInimigosTotais}";
     }
 }

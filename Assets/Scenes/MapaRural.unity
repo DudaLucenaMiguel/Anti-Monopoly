@@ -1561,13 +1561,13 @@ PrefabInstance:
     - target: {fileID: 8103679648512161293, guid: b98bc557a0a00ea46b579a1ee9a5bc1a, type: 3}
       propertyPath: contadorDeInimigos
       value: 
-      objectReference: {fileID: 6059031085008548786}
+      objectReference: {fileID: 8006819347728495217}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b98bc557a0a00ea46b579a1ee9a5bc1a, type: 3}
---- !u!1001 &4325535165434796093
+--- !u!1001 &5298173989134158889
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1578,6 +1578,10 @@ PrefabInstance:
     - target: {fileID: 2124804871103706411, guid: 6572baf82c2b2b74d8dcf072099847e7, type: 3}
       propertyPath: m_Name
       value: ControleDeScenes
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267132691456322330, guid: 6572baf82c2b2b74d8dcf072099847e7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4628877419261233462, guid: 6572baf82c2b2b74d8dcf072099847e7, type: 3}
       propertyPath: m_Pivot.x
@@ -1659,15 +1663,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6401229992277329091, guid: 6572baf82c2b2b74d8dcf072099847e7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.9999695
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6572baf82c2b2b74d8dcf072099847e7, type: 3}
---- !u!114 &6059031085008548786 stripped
+--- !u!114 &8006819347728495217 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5988253234394262092, guid: 6572baf82c2b2b74d8dcf072099847e7, type: 3}
-  m_PrefabInstance: {fileID: 4325535165434796093}
+  m_PrefabInstance: {fileID: 5298173989134158889}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -1682,7 +1690,7 @@ SceneRoots:
   - {fileID: 2143753649}
   - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 4325535165434796093}
   - {fileID: 822631553}
   - {fileID: 3059638804842834822}
   - {fileID: 836051512656221574}
+  - {fileID: 5298173989134158889}

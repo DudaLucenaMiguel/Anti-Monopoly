@@ -45,13 +45,11 @@ public class PlayerScript : MonoBehaviour
     {
         vidaAtual = vidaMaxima;
         barraDeVida.AlterarBarraDeVida(vidaAtual, vidaMaxima);
-
-        Time.timeScale = 1;
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Space))
         {
             Mirar();
         }
@@ -90,7 +88,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (timer > frequenciaDeTiro)
         {
-            if (Input.GetKeyUp(KeyCode.Mouse0))
+            if (Input.GetKeyUp(KeyCode.Space))
             {
                 GameObject ataque = Instantiate(projetilPreFab, gatilho.position, gatilho.rotation);
                 Rigidbody rb = ataque.GetComponent<Rigidbody>();
