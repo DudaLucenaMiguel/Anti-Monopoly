@@ -589,10 +589,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 625874385}
+  - component: {fileID: 625874381}
   - component: {fileID: 625874384}
   - component: {fileID: 625874383}
   - component: {fileID: 625874382}
-  - component: {fileID: 625874381}
   m_Layer: 5
   m_Name: MenuInicial
   m_TagString: Untagged
