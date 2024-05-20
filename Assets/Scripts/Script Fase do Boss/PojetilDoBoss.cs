@@ -9,8 +9,9 @@ public class PojetilDoBoss : MonoBehaviour
 
     private void Awake()
     {
-        controleDeFase = GameObject.Find("ControleDeFase").GetComponent<ControleDeFaseScript>();
+        controleDeFase = GameObject.Find("ControleDeFaseBoss").GetComponent<ControleDeFaseScript>();
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         Destroy(gameObject);

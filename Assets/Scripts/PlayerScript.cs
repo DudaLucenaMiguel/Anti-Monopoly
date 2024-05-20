@@ -17,6 +17,8 @@ public class PlayerScript : MonoBehaviour
     public float velocidadeDeGiro = 200;
     float smoothTime = 0.05f;
     float currentVelocity;
+    float valorDaGravidade = -9.81f;
+    Vector3 gravidade;
 
     //variaveis de tiro
     public Transform gatilho;
@@ -35,16 +37,19 @@ public class PlayerScript : MonoBehaviour
     public int danoSofrido;
     public BarraDeVidaScript barraDeVida;
 
-    
+    public Transform origem;
+    public bool voltarAOrigem;
 
     private void Awake()
     {
-        CC = GetComponent<CharacterController>(); 
+        CC = GetComponent<CharacterController>();
+        origem = GameObject.Find("OrigemDoPlayer").transform;
     }
     void Start()
     {
         vidaAtual = vidaMaxima;
         barraDeVida.AlterarBarraDeVida(vidaAtual, vidaMaxima);
+        
     }
 
     void Update()
@@ -60,6 +65,9 @@ public class PlayerScript : MonoBehaviour
         }
         Atirar();
         GerenciarVida();
+        ResetarPosicao();
+
+
     }
     public void Movimentar()
     {
@@ -68,6 +76,9 @@ public class PlayerScript : MonoBehaviour
 
         direcao = new Vector3(horizontal, 0, vertical);
         CC.Move(direcao * velocidadeDoPlayer * Time.deltaTime);
+
+        gravidade = new Vector3(0, valorDaGravidade, 0);
+        CC.Move(gravidade * Time.deltaTime);
     }
     public void Rotacionar()
     {
@@ -117,6 +128,17 @@ public class PlayerScript : MonoBehaviour
         }
 
         barraDeVida.AlterarBarraDeVida(vidaAtual, vidaMaxima);
+    }
+
+    void ResetarPosicao()
+    {
+        if(voltarAOrigem == true)
+        {
+            gameObject.transform.position = origem.transform.position;
+            gameObject.transform.rotation = origem.transform.rotation;
+            voltarAOrigem = false;
+        }
+        
     }
     
 }

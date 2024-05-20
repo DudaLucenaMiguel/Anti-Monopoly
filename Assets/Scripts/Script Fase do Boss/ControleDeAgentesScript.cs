@@ -15,6 +15,7 @@ public class ControleDeAgentesScript : MonoBehaviour
     public float alcanceDoAtaque_ = 10;
     public float distanciaMinimaParaAtacar_ = 10;
     public float frequenciaDoTiro_ = 3;
+    public bool mirarNoPlayer;
     private void Awake()
     {
         agentes = GameObject.FindGameObjectsWithTag("Agente");
@@ -34,7 +35,9 @@ public class ControleDeAgentesScript : MonoBehaviour
             agentesScript[i].velocidadeDoAtaque = velocidadeDoAtaque_;
             agentesScript[i].alcanceDoAtaque = alcanceDoAtaque_;
             agentesScript[i].distanciaMinimaParaAtacar = distanciaMinimaParaAtacar_;
-            agentesScript[i].frequenciaDoTiro = frequenciaDoTiro_;  
+            agentesScript[i].frequenciaDoTiro = frequenciaDoTiro_;
+            agentesScript[i].olharParaOPlayer = mirarNoPlayer;
+            
         }
     }
 }

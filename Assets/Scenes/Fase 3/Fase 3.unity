@@ -4459,8 +4459,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1222028515847939565, guid: 6572baf82c2b2b74d8dcf072099847e7, type: 3}
+      propertyPath: venceu
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222028515847939565, guid: 6572baf82c2b2b74d8dcf072099847e7, type: 3}
       propertyPath: proximaScene
-      value: Boss
+      value: Boss 3
       objectReference: {fileID: 0}
     - target: {fileID: 2124804871103706411, guid: 6572baf82c2b2b74d8dcf072099847e7, type: 3}
       propertyPath: m_Name
@@ -14198,6 +14202,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470860365}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &473878988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 473878989}
+  m_Layer: 0
+  m_Name: OrigemDoPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &473878989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473878988}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &483897745
 GameObject:
   m_ObjectHideFlags: 0
@@ -66510,6 +66545,7 @@ SceneRoots:
   - {fileID: 1497668484}
   - {fileID: 875334419}
   - {fileID: 2054696547}
+  - {fileID: 473878989}
   - {fileID: 1475432530}
   - {fileID: 1610382259770118682}
   - {fileID: 1821242615}

@@ -33,7 +33,7 @@ public class AtaqueDoPlayerScript : MonoBehaviour
         }
         if(boss != null)
         {
-            ControleDeFaseScript controleDeFase = GameObject.Find("ControleDeFase").GetComponent<ControleDeFaseScript>();
+            ControleDeFaseScript controleDeFase = GameObject.Find("ControleDeFaseBoss").GetComponent<ControleDeFaseScript>();
             controleDeFase.bossAtingido = true;
         }
         if(barreira != null)

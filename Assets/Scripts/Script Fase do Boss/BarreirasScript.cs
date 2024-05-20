@@ -12,12 +12,11 @@ public class BarreirasScript : MonoBehaviour
 
     private void Awake()
     {
-        controleDeFase = GameObject.Find("ControleDeFase").GetComponent<ControleDeFaseScript>();
+        controleDeFase = GameObject.Find("ControleDeFaseBoss").GetComponent<ControleDeFaseScript>();
     }
     private void Start()
     {
         vida = tamanhoDaBarreira.Length;
-        gameObject.SetActive(false);
     }
     void Update()
     {

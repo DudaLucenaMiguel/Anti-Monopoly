@@ -19,19 +19,20 @@ public class ControleDeFaseScript : MonoBehaviour
     [System.NonSerialized]
     public ControleDeScene controleDeScene;
 
-    //[System.NonSerialized]
+    [System.NonSerialized]
     public GameObject[] agentes;
-    //[System.NonSerialized]
+    [System.NonSerialized]
     public AgentesScript[] agentesScript;
     public int numeroDeAgentes;
 
-    //[System.NonSerialized]
+    [System.NonSerialized]
     public GameObject[] barreiras;
-    //[System.NonSerialized]
+    [System.NonSerialized]
     public BarreirasScript[] barreirasScript;
     public int numeroDeBarreiras;
 
-    public float tempoParaDestruirBarreiras = 10;
+    public float tempoPorBarreira = 5;
+    public float tempoParaDestruirBarreiras;
     public float timerParaDestruirBarreiras;
 
     public float tempoDeAtaqueDoBoss = 10;
@@ -43,6 +44,8 @@ public class ControleDeFaseScript : MonoBehaviour
     public bool playerAtingido;
     public bool bossAtingido;
     public bool bossAtirando;
+
+    public bool caiuDoPesnhasco;
 
     private void Awake()
     {
@@ -72,10 +75,13 @@ public class ControleDeFaseScript : MonoBehaviour
 
         //captar Controle de Scene
         controleDeScene = GameObject.Find("ControleDeScenes").GetComponent<ControleDeScene>();
+
+        
     }
     void Start()
     {
         playerScript.danoSofrido = 0;
+        playerScript.distanciaMaximaDoProjetil = 200;
 
         playerScript.vidaMaxima = quantidadeDeTurnos;
         playerScript.vidaAtual = quantidadeDeTurnos;
@@ -83,13 +89,28 @@ public class ControleDeFaseScript : MonoBehaviour
         bossScript.vidaMaxima = quantidadeDeTurnos;
         bossScript.vidaAtual = quantidadeDeTurnos;
 
+        tempoParaDestruirBarreiras = barreiras.Length * tempoPorBarreira;
+
         ReiniciarOTurno();
     }
     void Update()
     {
         Reagir();
         GerenciarJogo();
+        Caiu();
     }  
+    void InvocarAgentesEBarreiras()
+    {
+        for (int i = 0; i < barreiras.Length; i++)
+        {
+            barreiras[i].SetActive(true);
+        }
+
+        for (int i = 0; i < agentes.Length; i++)
+        {
+            agentes[i].SetActive(true);
+        }
+    }
     void Reagir()
     {
         if (bossAtingido == true && ataque == false)
@@ -97,15 +118,7 @@ public class ControleDeFaseScript : MonoBehaviour
             bossAtingido = false;
             ataque = true;
 
-            for (int i = 0; i < barreiras.Length; i++)
-            {
-                barreiras[i].SetActive(true);
-            }
-
-            for (int i = 0; i < agentes.Length; i++)
-            {
-                agentes[i].SetActive(true);
-            }
+            InvocarAgentesEBarreiras();
         }
         else if(bossAtingido == true && ataque == true)
         {
@@ -170,8 +183,6 @@ public class ControleDeFaseScript : MonoBehaviour
             {
                 bossScript.atirar = false;
             }
-
-            
         }
     }
     void ReiniciarOTurno()
@@ -202,6 +213,18 @@ public class ControleDeFaseScript : MonoBehaviour
         timerParaDestruirBarreiras = tempoParaDestruirBarreiras;
 
         timerText.text = " ";
+
+        playerScript.voltarAOrigem = true;
+    }
+
+    void Caiu()
+    {
+        if(caiuDoPesnhasco == true)
+        {
+            playerScript.vidaAtual -= 1;
+            ReiniciarOTurno();
+            caiuDoPesnhasco = false;
+        }
 
         
     }

@@ -64,17 +64,17 @@ public class ControleDeScene : MonoBehaviour
         {
             ProximaScena("Fase 3");
         }
-        if(Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.Keypad1) && SceneManager.GetActiveScene().name != "Boss")
+        if(Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.Keypad1) && SceneManager.GetActiveScene().name != "Boss 1")
         {
-            ProximaScena("Boss");
+            ProximaScena("Boss 1");
         }
-        if (Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.Keypad2) && SceneManager.GetActiveScene().name != "Boss")
+        if (Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.Keypad2) && SceneManager.GetActiveScene().name != "Boss 2")
         {
-            ProximaScena("Boss");
+            ProximaScena("Boss 2");
         }
-        if (Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.Keypad3) && SceneManager.GetActiveScene().name != "Boss")
+        if (Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.Keypad3) && SceneManager.GetActiveScene().name != "Boss 3")
         {
-            ProximaScena("Boss");
+            ProximaScena("Boss 3");
         }
     }
     public void ProximaScena(string cena)

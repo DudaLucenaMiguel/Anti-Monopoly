@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -13,15 +14,16 @@ public class AgentesScript : MonoBehaviour
 
     public Transform origem;
 
-    [System.NonSerialized]
+    //[System.NonSerialized]
     public GameObject player;
-    [System.NonSerialized]
+   // [System.NonSerialized]
     public PlayerScript playerScript;
     float distanciaPlayerAgente;
     public float distanciaLimiteAgentePlayer = 5;
 
     public float velocidadeDeGiro = 50;
     public float velocidadeDoAgente;
+    public bool olharParaOPlayer;
 
     public Transform gatilho;
     public GameObject ataquePreFab;
@@ -38,7 +40,7 @@ public class AgentesScript : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player");
         playerScript = player.GetComponent<PlayerScript>();
-        controleDeFase = GameObject.Find("ControleDeFase").GetComponent<ControleDeFaseScript>();
+        controleDeFase = GameObject.Find("ControleDeFaseBoss").GetComponent<ControleDeFaseScript>();
 
         AI = GetComponent<NavMeshAgent>();
     }
@@ -49,6 +51,7 @@ public class AgentesScript : MonoBehaviour
 
         Perseguir();
         GerenciarVida();
+        OlharPara();
 
         if (distanciaPlayerAgente <= distanciaMinimaParaAtacar)
         {
@@ -103,5 +106,14 @@ public class AgentesScript : MonoBehaviour
             transform.position = origem.position;
             transform.rotation = origem.rotation;
         }
+    }
+    void OlharPara()
+    {
+        if(olharParaOPlayer == true)
+        {
+            Quaternion anguloDoPlayer = Quaternion.LookRotation(player.transform.position - transform.position).normalized;
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, anguloDoPlayer, velocidadeDeGiro * Time.deltaTime);
+        }
+        
     }
 }
