@@ -49,6 +49,11 @@ public class MenuInicialScript : MonoBehaviour
         {
             ProximaScena("Boss 3");
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
         public void AbrirPainelInformativo()
     {

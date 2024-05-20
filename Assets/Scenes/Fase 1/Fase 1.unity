@@ -10887,7 +10887,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 1.2
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
@@ -33279,7 +33279,7 @@ PrefabInstance:
       objectReference: {fileID: 901300173}
     - target: {fileID: 8060129470520296401, guid: b5e99abe9e3ecdd469c3f7e6a3357a08, type: 3}
       propertyPath: danoCausado
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8060129470520296401, guid: b5e99abe9e3ecdd469c3f7e6a3357a08, type: 3}
       propertyPath: frequenciaDeTiro
@@ -57100,7 +57100,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 1.2
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
@@ -57689,7 +57689,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 1.2
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
@@ -58096,7 +58096,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 1.2
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
@@ -59440,7 +59440,7 @@ MonoBehaviour:
   _frequenciaDoTiro: 3
   _danoCausado: 2
   _danoSofrido: 0
-  _vidaMaxima: 10
+  _vidaMaxima: 20
   _velocidadeAoAndar: 4
   _velocidadeAoCorrer: 6
   inimigos: []

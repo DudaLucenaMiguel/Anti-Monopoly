@@ -1506,7 +1506,7 @@ MonoBehaviour:
   velocidadeDeGiro_: 50
   velocidadeDoAgente_: 5
   velocidadeDoAtaque_: 20
-  alcanceDoAtaque_: 10
+  alcanceDoAtaque_: 7
   distanciaMinimaParaAtacar_: 10
   frequenciaDoTiro_: 3
   mirarNoPlayer: 0

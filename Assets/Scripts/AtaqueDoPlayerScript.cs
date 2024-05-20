@@ -10,7 +10,7 @@ public class AtaqueDoPlayerScript : MonoBehaviour
     BarreirasScript barreira;
     int dano;
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider collision)
     {
         Destroy(gameObject);
 

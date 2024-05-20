@@ -76,6 +76,11 @@ public class ControleDeScene : MonoBehaviour
         {
             ProximaScena("Boss 3");
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
     public void ProximaScena(string cena)
     {
