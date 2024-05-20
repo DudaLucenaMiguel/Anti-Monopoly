@@ -5,9 +5,9 @@ using UnityEngine;
 public class AtaqueDoPlayerScript : MonoBehaviour
 {
     InimgoScript inimigo;
-    AgenteScript agente;
-    BossScript boss;
-    BarreiraScript barreira;
+    AgentesScript agente;
+    BossScrip boss;
+    BarreirasScript barreira;
     int dano;
 
     private void OnCollisionEnter(Collision collision)
@@ -15,9 +15,9 @@ public class AtaqueDoPlayerScript : MonoBehaviour
         Destroy(gameObject);
 
         inimigo = collision.transform.GetComponent<InimgoScript>();
-        agente = collision.transform.GetComponent<AgenteScript>();
-        boss = collision.transform.GetComponent<BossScript>();
-        barreira = collision.transform.GetComponent<BarreiraScript>();
+        agente = collision.transform.GetComponent<AgentesScript>();
+        boss = collision.transform.GetComponent<BossScrip>();
+        barreira = collision.transform.GetComponent<BarreirasScript>();
 
         AplicarDano();
     }
@@ -33,7 +33,8 @@ public class AtaqueDoPlayerScript : MonoBehaviour
         }
         if(boss != null)
         {
-            boss.AplicarDanoNoBoss(dano);
+            ControleDeFaseScript controleDeFase = GameObject.Find("ControleDeFase").GetComponent<ControleDeFaseScript>();
+            controleDeFase.bossAtingido = true;
         }
         if(barreira != null)
         {

@@ -7,6 +7,9 @@ public class MenuInicialScript : MonoBehaviour
 {
     public GameObject painelInformativo;
 
+    public GameObject[] imagens;
+
+   
     void Start()
     {
         painelInformativo.SetActive(false);

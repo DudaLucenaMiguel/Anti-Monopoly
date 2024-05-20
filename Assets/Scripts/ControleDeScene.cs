@@ -52,17 +52,29 @@ public class ControleDeScene : MonoBehaviour
                 Quit();
             }
         }
-        if (Input.GetKeyDown(KeyCode.Keypad1) && SceneManager.GetActiveScene().name != "Fase 1")
+        if (Input.GetKey(KeyCode.F) && Input.GetKey(KeyCode.Keypad1) && SceneManager.GetActiveScene().name != "Fase 1")
         {
             ProximaScena("Fase 1");
         }
-        if (Input.GetKeyDown(KeyCode.Keypad2) && SceneManager.GetActiveScene().name != "Fase 2")
+        if (Input.GetKey(KeyCode.F) && Input.GetKey(KeyCode.Keypad2) && SceneManager.GetActiveScene().name != "Fase 2")
         {
             ProximaScena("Fase 2");
         }
-        if (Input.GetKeyDown(KeyCode.Keypad3) && SceneManager.GetActiveScene().name != "Fase 3")
+        if (Input.GetKey(KeyCode.F) && Input.GetKey(KeyCode.Keypad3) && SceneManager.GetActiveScene().name != "Fase 3")
         {
             ProximaScena("Fase 3");
+        }
+        if(Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.Keypad1) && SceneManager.GetActiveScene().name != "Boss")
+        {
+            ProximaScena("Boss");
+        }
+        if (Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.Keypad2) && SceneManager.GetActiveScene().name != "Boss")
+        {
+            ProximaScena("Boss");
+        }
+        if (Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.Keypad3) && SceneManager.GetActiveScene().name != "Boss")
+        {
+            ProximaScena("Boss");
         }
     }
     public void ProximaScena(string cena)
@@ -119,11 +131,6 @@ public class ControleDeScene : MonoBehaviour
     }
     void GerenciarJogo()
     {
-        if(playerScript.morreu == true)
-        {
-            gameOver = true;
-        }
-
         if (gameOver)
         {
             AbrirPainelDeGameOver();

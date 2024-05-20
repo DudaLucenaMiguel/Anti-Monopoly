@@ -27,15 +27,15 @@ public class PlayerScript : MonoBehaviour
     public int danoCausado;
     public float frequenciaDeTiro = 0;
     [System.NonSerialized] public float timer;
+    public BarraDeTiroScript barraDeTiro;
 
     //variaveis de vida
     public int vidaMaxima = 100;
     public int vidaAtual;
     public int danoSofrido;
     public BarraDeVidaScript barraDeVida;
-    public bool morreu = false;
 
-   
+    
 
     private void Awake()
     {
@@ -59,7 +59,7 @@ public class PlayerScript : MonoBehaviour
             Movimentar();
         }
         Atirar();
-
+        GerenciarVida();
     }
     public void Movimentar()
     {
@@ -101,18 +101,22 @@ public class PlayerScript : MonoBehaviour
             }
         }
         timer += Time.deltaTime;
+
+        barraDeTiro.AlterarBarraDeAtaque(timer, frequenciaDeTiro);
     }
     public void AplicarDanoNoPlayer(int dano)
-    {
+    { 
         dano = danoSofrido;
         vidaAtual -= dano;
-        barraDeVida.AlterarBarraDeVida(vidaAtual, vidaMaxima);
-
+    }
+    void GerenciarVida()
+    {
         if (vidaAtual <= 0)
         {
             gameObject.SetActive(false);
-            morreu = true;
-            
         }
+
+        barraDeVida.AlterarBarraDeVida(vidaAtual, vidaMaxima);
     }
+    
 }

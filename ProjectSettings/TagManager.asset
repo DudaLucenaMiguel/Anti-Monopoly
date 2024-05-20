@@ -5,14 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Inimigo
+  - Barreira
   - Agente
   - SpawnDeAgentes
-  - Barreira
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Mini-Mapa
   - Water
   - UI
   - 
