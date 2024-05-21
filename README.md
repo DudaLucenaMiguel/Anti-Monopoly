@@ -15,7 +15,7 @@
 ## Descrição
 
 <p align="center">
-<img src="[https://pix4free.org/assets/library/2021-01-20/originals/game.jpg](https://www.canva.com/design/DAGFVVECaiM/8VxTo_YEq7jFkeb3QtS9vQ/view?utm_content=DAGFVVECaiM&utm_campaign=designshare&utm_medium=link&utm_source=editor)" alt="Anti-Monopoly" border="0">
+<img src="https://www.canva.com/design/DAGFVVECaiM/8VxTo_YEq7jFkeb3QtS9vQ/view?utm_content=DAGFVVECaiM&utm_campaign=designshare&utm_medium=link&utm_source=editor" alt="Anti-Monopoly" border="0">
   Game by <a href=" ">Duda Lucena Miguel, Marcus Vinicius Miranda Duque, Otavio Vecchi Zeferino, Victor Luongo Gouveia</a> 
 </p>
 
