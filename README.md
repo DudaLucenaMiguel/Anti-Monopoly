@@ -74,22 +74,22 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 * 1.0 -15/03/2024
 	* primeiro escopo;
 	* inicio do desenvolvimento da mecânica do Player 
-* locomoção no eixo x e z);
-* rotação;
+		* locomoção no eixo x e z);
+		* rotação;
 * 1.1 - 22/03/2024
 	* continuidade no desenvolvimento da mecânica do Player;
 		* ataque – tiro com instantiate;
 		* aplicação de dano em objeto simulado;
 * 2.0 - 29/03/2024
-*início do desenvolvimento das mecânicas dos inimigos da primeira etapa;
-*movimento autônomo: NavMesh;
+	*início do desenvolvimento das mecânicas dos inimigos da primeira etapa;
+	*movimento autônomo: NavMesh;
 	* perseguição ao player;
 * 2.1 – 05/04/2024
 	* continuidade no desenvolvimento das mecânicas do inimigo da primeira etapa;
 		* patrulha de um perímetro usando WayPoints;
 * 2.2 – 12/04/2024
 	* continuidade no desenvolvimento das mecânicas do inimigo da primeira etapa;
-* aplicação de uma mecânica de ataque e dano no inimigo e no player com as condições de ataque;
+	* aplicação de uma mecânica de ataque e dano no inimigo e no player com as condições de ataque;
 * 2.3 – 19/04/2024
 	* simulação de enfrentamento entre o player e o inimigo;
 	* gerenciamento da fase;
@@ -109,7 +109,7 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 	* confecção e montagem dos mapas e das fases;
 	* confecção das sprites e painéis;
 * 4.1 – 17/04/2024
-* desenvolvimento e aplicação das mecânicas de entrada e mudanças de cena;
+	* desenvolvimento e aplicação das mecânicas de entrada e mudanças de cena;
 
 
 ## 📋 Licença/License
