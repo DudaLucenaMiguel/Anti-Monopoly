@@ -8,24 +8,20 @@
 
 ## Anti-Monopoly
 
-## Integrantes: <a href="https://github.com/DudaLucenaMiguel">Duda Lucena Miguel</a>, <a href=" ">Marcus Vinicius Miranda Duque</a>, <a href=" ">Otavio Vecchi Zeferino</a>, <a href=" ">Victor Luongo Gouveia</a>, 
+## Integrantes: <a href="https://github.com/DudaLucenaMiguel">Duda Lucena Miguel</a>, <a href=" ">Marcus Vinicius Miranda Duque</a>, <a href=" ">Otavio Vecchi Zeferino</a>, <a href=" ">Victor Luongo Gouveia</a>
 
-## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosetti de Quiroz</a>, <a href=" ">Fabiano Alves Onça</a>, 
+## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosetti de Quiroz</a>, <a href=" ">Fabiano Alves Onça</a> 
 
 ## Descrição
 
 <p align="center">
 <img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="Anti-Monopoly" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+  Game by <a href=" ">Duda Lucena Miguel, Marcus Vinicius Miranda Duque, Otavio Vecchi Zeferino, Victor Luongo Gouveia</a> 
 </p>
 
-
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
 <br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
-<br><br>
-May the force be with you!
-<br><br>
+  O projeto Anti-Monopoly tem como objetivo ilustrar, de maneira lúdica, a proposta de nosso grupo para resolução da ODS (Objetivos de Desenvolvimento Sustentável) de número 2 da ONU (Organização das Nações Unidas), Fome zero e agricultura sustentável. A ideia consciente em explorar medidas para combate do mono e oligopólios do agro negócio, com o fito de expropriar terras que não cumprem nenhuma função social ou econômica, apenas servem de ferramenta para especulação dos demais lotes, dispondo-os ao Estado que ofertará a sociedade civil para que trabalhem e nessas terras gerem riqueza, incentivando práticas de agricultura sustentáveis, junto com o abastecimento do mercado interno, aumentando a oferta de produtos, principalmente os alimentícios, assim projetando sua demanda. 
+	O jogo consciente em duas etapas. A etapa inicial, onde a ONU, representado por pelo Player, inicia um combate as milicias internas das zonas agrícolas, membros da própria comunidade local, forçados pelo contexto a prestarem tal serviço, gerindo e protegendo os interesses do capital privado com o uso de força física e bélica. Na segunda etapa, a ONU parte ao combate com a representação do oligarca, que, no jogo, é representado pelo Boss da cena, onde este faz uso de outros agentes e de barreiras para blindar-se dos ataques, sendo esses seus membros internos do governo e seus meios financeiros, respectivamente.
 
 ## 🛠 Estrutura de pastas
 
@@ -36,11 +32,8 @@ May the force be with you!
   &emsp;|Documentação.docx<br>
 |-->executáveis<br>
   &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
 |-->imagens<br>
 |-->src<br>
-  &emsp;|-->Backend<br>
   &emsp;|-->Frontend<br>
 |readme.md<br>
 
@@ -60,15 +53,6 @@ Há também 4 pastas que seguem da seguinte forma:
 
 ## 🛠 Instalação
 
-<b>Android:</b>
-
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
 <b>Windows:</b>
 
 Não há instalação! Apenas executável!
@@ -78,24 +62,11 @@ Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro progra
 Coloque código do prompt de comnando se for necessário
 ```
 
-<b>HTML:</b>
-
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
-
 ## 💻 Configuração para Desenvolvimento
-
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
 -<a href="https://godotengine.org/download">GODOT</a>
-
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
-```
 
 ## 🗃 Histórico de lançamentos
 
