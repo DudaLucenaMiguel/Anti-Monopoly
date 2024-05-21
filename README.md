@@ -46,7 +46,7 @@ Não há instalação! Apenas executável!
 Encontre o Anti-Monopoly.exe na pasta executáveis e execute-o como qualquer outro programa.
 
 ```sh
-Coloque código do prompt de comnando se for necessário
+https://github.com/DudaLucenaMiguel/Anti-Monopoly/blob/main/src/Frontend/Build/Anti-Monopoly.exe
 ```
 
 ## 💻 Configuração para Desenvolvimento
