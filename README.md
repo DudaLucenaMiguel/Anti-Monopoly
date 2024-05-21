@@ -15,8 +15,7 @@
 ## Descrição
 
 <p align="center">
-<img src="![Emblema](https://github.com/DudaLucenaMiguel/Anti-Monopoly/assets/163124218/3597a1c6-0d80-496f-85cb-30cf8535e165)
-![Logo](https://github.com/DudaLucenaMiguel/Anti-Monopoly/assets/163124218/2425dffc-2175-4a88-87b4-a60d0ba82eaa)" alt="Anti-Monopoly" border="0">
+<img src="!https://github.com/DudaLucenaMiguel/Anti-Monopoly/assets/163124218/3597a1c6-0d80-496f-85cb-30cf8535e165" alt="Anti-Monopoly" border="0">
   Game by <a href=" ">Duda Lucena Miguel, Marcus Vinicius Miranda Duque, Otavio Vecchi Zeferino, Victor Luongo Gouveia</a> 
 </p>
 
