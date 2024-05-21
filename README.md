@@ -73,18 +73,46 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+* 1.0 -15/03/2024
+	*primeiro escopo;
+	*inicio do desenvolvimento da mecânica do Player 
+*locomoção no eixo x e z);
+* rotação;
+* 1.1 - 22/03/2024
+	*continuidade no desenvolvimento da mecânica do Player;
+		*ataque – tiro com instantiate;
+		*aplicação de dano em objeto simulado;
+* 2.0 - 29/03/2024
+*início do desenvolvimento das mecânicas dos inimigos da primeira etapa;
+*movimento autônomo: NavMesh;
+	*perseguição ao player;
+ *2.1 – 05/04/2024
+	*continuidade no desenvolvimento das mecânicas do inimigo da primeira etapa;
+		*patrulha de um perímetro usando WayPoints;
+*2.2 – 12/04/2024
+	*continuidade no desenvolvimento das mecânicas do inimigo da primeira etapa;
+*aplicação de uma mecânica de ataque e dano no inimigo e no player com as condições de ataque;
+*2.3 – 19/04/2024
+	*simulação de enfrentamento entre o player e o inimigo;
+	*gerenciamento da fase;
+		*condição de vitória e derrota;
+*3.0 – 26/04/2024
+	*início do desenvolvimento das mecânicas do boss;
+		*movimento: olhar para o player;
+		* barreiras destrutíveis;
+		* agentes de perseguição;
+3.1 – 03/04/2024
+	*estruturação dos momentos de invocar as mecânicas;
+	*condição de vitória e derrota na fase do Boss;
+3.2 – 10/04/2024
+	*fim das simulações de interação da fase do boss;
+	*etapas funcionais;
+4.0 – 11/04/2024
+	*confecção e montagem dos mapas e das fases;
+	*confecção das sprites e painéis;
+4.1 – 17/04/2024
+*desenvolvimento e aplicação das mecânicas de entrada e mudanças de cena;
+
 
 ## 📋 Licença/License
 
