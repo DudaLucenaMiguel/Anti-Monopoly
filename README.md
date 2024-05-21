@@ -106,7 +106,10 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://www.youtube.com/>
-2. <https://www.blackbox.ai/>
-3. <https://brawlify.com/br/>
-4. <https://www.canva.com/>
+1. Tutoriais
+   <https://www.youtube.com/>
+3. <https://www.blackbox.ai/>
+4. Mapas: <https://brawlify.com/br/>
+5. Mapas: <https://www.piskelapp.com/>
+6. Sprites: <https://www.canva.com/>
+7. 
