@@ -15,7 +15,7 @@
 ## Descrição
 
 <p align="center">
-<img src="!https://github.com/DudaLucenaMiguel/Anti-Monopoly/assets/163124218/3597a1c6-0d80-496f-85cb-30cf8535e165" alt="Anti-Monopoly" border="0">
+<img src="https://private-user-images.githubusercontent.com/163124218/332245020-3a2caa3b-8e8b-4682-9fe8-644773729045.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTYyNTQ1MDEsIm5iZiI6MTcxNjI1NDIwMSwicGF0aCI6Ii8xNjMxMjQyMTgvMzMyMjQ1MDIwLTNhMmNhYTNiLThlOGItNDY4Mi05ZmU4LTY0NDc3MzcyOTA0NS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUyMVQwMTE2NDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNzE2NTZkMmQ4ZmRhODI0NjViZmUzM2JlMWVkNjUzNGQwYjhmYTdjYTRmNmYzNTNhYTBiODRkOTJhN2MwN2Y0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.oV2sIWmpVPoiJiJ_CipFkH7g0LIwjPzfN2jl2-uDzw8" alt="Anti-Monopoly" border="0">
   Game by <a href=" ">Duda Lucena Miguel, Marcus Vinicius Miranda Duque, Otavio Vecchi Zeferino, Victor Luongo Gouveia</a> 
 </p>
 
