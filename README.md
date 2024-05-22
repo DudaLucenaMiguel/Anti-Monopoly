@@ -29,22 +29,22 @@
 -Raiz<br>
 |<br>
 |-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|Documentação.docx<br>
+	&emsp;|-->antigos<br>
+	&emsp;|Documentação.docx<br>
 |-->executáveis<br>
-  &emsp;|-->windows<br>
+	&emsp;|-->windows<br>
 |-->imagens<br>
 |-->src<br>
-	|-->Frontend<br>
-  		|-->Anti-Monopoly<br>
-   			|-->Assets<br>
-   				|-->Fonte de Texto<br>
-     				|-->Image<br>
-       				|-->Materiais<br>
-	 			|-->PreFabs<br>
-   				|-->Scene<br>
-     				|-->Scripts<br>	
-   		|-->Build<br>
+	&emsp;|-->Frontend<br>
+  		&emsp;|-->Anti-Monopoly<br>
+   			&emsp;|-->Assets<br>
+   				&emsp;|-->Fonte de Texto<br>
+     				&emsp;|-->Image<br>
+       				&emsp;|-->Materiais<br>
+	 			&emsp;|-->PreFabs<br>
+   				&emsp;|-->Scene<br>
+     				&emsp;|-->Scripts<br>	
+   		&emsp;|-->Build<br>
   			
   
 |readme.md<br>
