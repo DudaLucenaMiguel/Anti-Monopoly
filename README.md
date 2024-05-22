@@ -15,9 +15,9 @@
 ## Descrição
 
 <p align="center">
-<img src="https://github.com/DudaLucenaMiguel/Anti-Monopoly/blob/main/src/Frontend/Anti-Monopoly/Assets/Imagens/Sprites%20Canva/Emblema.png" alt="Anti-Monopoly" border="0"> </p>
-	Game image by <a href=" ">Duda Lucena Miguel</a> 
-</p>
+<img src="https://github.com/DudaLucenaMiguel/Anti-Monopoly/blob/main/src/Frontend/Anti-Monopoly/Assets/Imagens/Sprites%20Canva/Emblema.png" alt="Anti-Monopoly" border="0">
+<p align="center">
+Game image by <a href=" ">Duda Lucena Miguel</a> 
 
 <br><br>
   	O projeto Anti-Monopoly tem como objetivo ilustrar, de maneira lúdica, a proposta de nosso grupo para resolução da ODS (Objetivos de Desenvolvimento Sustentável) de número 2 da ONU (Organização das Nações Unidas), Fome zero e agricultura sustentável. A ideia consciente em explorar medidas para combate do mono e oligopólios do agro negócio, com o fito de expropriar terras que não cumprem nenhuma função social ou econômica, apenas servem de ferramenta para especulação dos demais lotes, dispondo-os ao Estado que ofertará a sociedade civil para que trabalhem e nessas terras gerem riqueza, incentivando práticas de agricultura sustentáveis, junto com o abastecimento do mercado interno, aumentando a oferta de produtos, principalmente os alimentícios, assim projetando sua demanda. 
