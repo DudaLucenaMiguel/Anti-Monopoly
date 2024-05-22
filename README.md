@@ -106,10 +106,20 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 Aqui estão as referências usadas no projeto.
 
-1. Tutoriais
-   <https://www.youtube.com/>
-3. <https://www.blackbox.ai/>
-4. Mapas: <https://brawlify.com/br/>
-5. Mapas: <https://www.piskelapp.com/>
-6. Sprites: <https://www.canva.com/>
-7. 
+1. Tutoriais:
+   <https://www.youtube.com/watch?v=HQgJReq-E-U&t=3s>
+   <https://www.youtube.com/watch?v=flkQApNITmE>
+   <https://www.youtube.com/watch?v=zUUJZ8tH5_k&t=69s>
+   <https://www.youtube.com/watch?v=YNbuhDiaXg4>
+   <https://www.youtube.com/watch?v=yIaAE9bLxXI>
+   <https://www.youtube.com/watch?v=wg3RPMJXKw0&t=316s>
+   <https://www.youtube.com/watch?v=o7-CHgwx0X0&t=1s>
+   <https://www.youtube.com/watch?v=o7-CHgwx0X0&t=1s>
+   <https://www.youtube.com/watch?v=mFdh-eO4hHc&t=2367s>
+   <https://www.youtube.com/watch?v=ieyHlYp5SLQ>
+   <https://www.youtube.com/watch?v=xHoRkZR61JQ&t=20s>
+3. Biblioteca de codigos: <https://www.blackbox.ai/>
+4. Confecção dos Mapas:
+   <https://brawlify.com/br/>
+   <https://www.piskelapp.com/>
+6. Sprites: <https://www.canva.com/> 
