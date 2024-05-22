@@ -38,11 +38,11 @@
 	&emsp;|-->Frontend<br>
   		&emsp;|-->Anti-Monopoly<br>
    			&emsp;&emsp;|-->Assets<br>
-   				&emsp;&emsp;&emsp;|-->Fonte de Texto<br>
-     				&emsp;&emsp;&emsp;|-->Image<br>
+   				&emsp;&emsp;&emsp;|-->Fontes de Texto<br>
+     				&emsp;&emsp;&emsp;|-->Imagens<br>
        				&emsp;&emsp;&emsp;|-->Materiais<br>
 	 			&emsp;&emsp;&emsp;|-->PreFabs<br>
-   				&emsp;&emsp;&emsp;|-->Scene<br>
+   				&emsp;&emsp;&emsp;|-->Scenes<br>
      				&emsp;&emsp;&emsp;|-->Scripts<br>	
    		&emsp;|-->Build<br>
   			
