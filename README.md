@@ -37,13 +37,13 @@
 |-->src<br>
 	&emsp;|-->Frontend<br>
   		&emsp;|-->Anti-Monopoly<br>
-   			&emsp;|-->Assets<br>
-   				&emsp;&emsp;|-->Fonte de Texto<br>
-     				&emsp;&emsp;|-->Image<br>
-       				&emsp;&emsp;|-->Materiais<br>
-	 			&emsp;&emsp;|-->PreFabs<br>
-   				&emsp;&emsp;|-->Scene<br>
-     				&emsp;&emsp;|-->Scripts<br>	
+   			&emsp;&emsp;|-->Assets<br>
+   				&emsp;&emsp;&emsp;|-->Fonte de Texto<br>
+     				&emsp;&emsp;&emsp;|-->Image<br>
+       				&emsp;&emsp;&emsp;|-->Materiais<br>
+	 			&emsp;&emsp;&emsp;|-->PreFabs<br>
+   				&emsp;&emsp;&emsp;|-->Scene<br>
+     				&emsp;&emsp;&emsp;|-->Scripts<br>	
    		&emsp;|-->Build<br>
   			
   
