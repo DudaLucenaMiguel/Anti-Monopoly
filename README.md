@@ -16,7 +16,7 @@
 
 <p align="center">
 <img src="https://github.com/DudaLucenaMiguel/Anti-Monopoly/blob/main/src/Frontend/Anti-Monopoly/Assets/Imagens/Sprites%20Canva/Emblema.png" alt="Anti-Monopoly" border="0"> </p>
-	Game by <a href=" ">Duda Lucena Miguel, Marcus Vinicius Miranda Duque, Otavio Vecchi Zeferino, Victor Luongo Gouveia</a> 
+	Game image by <a href=" ">Duda Lucena Miguel</a> 
 </p>
 
 <br><br>
