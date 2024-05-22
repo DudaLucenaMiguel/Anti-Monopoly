@@ -8,7 +8,7 @@
 
 ## Anti-Monopoly
 
-## Integrantes: <a href="https://github.com/DudaLucenaMiguel">Duda Lucena Miguel</a>, <a href=" ">Marcus Vinicius Miranda Duque</a>, <a href=" ">Otavio Vecchi Zeferino</a>, <a href=" ">Victor Luongo Gouveia</a>
+## Integrantes: <a href="https://github.com/DudaLucenaMiguel">Duda Lucena Miguel</a>, <a href="https://github.com/marcusduquee">Marcus Vinicius Miranda Duque</a>, <a href=" ">Otavio Vecchi Zeferino</a>, <a href="https://github.com/victorluongoo">Victor Luongo Gouveia</a>
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosetti de Quiroz</a>, <a href=" ">Fabiano Alves Onça</a> 
 
