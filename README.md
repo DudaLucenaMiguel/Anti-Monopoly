@@ -36,6 +36,14 @@
 |-->imagens<br>
 |-->src<br>
   &emsp;|-->Frontend<br>
+  	&emsp;|-->Assets<br>
+   		|-->Fonte de Texto<br>
+     		|-->Image<br>
+       		|-->Materiais<br>
+	 	|-->PreFabs<br>
+   		|-->Scene<br>
+     		|-->Scripts<br>		
+  
 |readme.md<br>
 
 ## 🛠 Instalação
