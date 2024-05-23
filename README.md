@@ -31,7 +31,7 @@ Emblema by <a href=" ">Duda Lucena Miguel</a>
 |-->documentos<br>
 	&emsp;|-->antigos<br>
 	&emsp;|Documentação.docx<br>
-|-->executáveis<br>
+|-->executavel<br>
 	&emsp;|-->windows<br>
 |-->imagens<br>
 |-->src<br>
@@ -43,8 +43,7 @@ Emblema by <a href=" ">Duda Lucena Miguel</a>
        				&emsp;&emsp;&emsp;|-->Materiais<br>
 	 			&emsp;&emsp;&emsp;|-->PreFabs<br>
    				&emsp;&emsp;&emsp;|-->Scenes<br>
-     				&emsp;&emsp;&emsp;|-->Scripts<br>	
-   		&emsp;|-->Build<br>
+     				&emsp;&emsp;&emsp;|-->Scripts<br>
   			
   
 |readme.md<br>
@@ -57,7 +56,7 @@ Não há instalação! Apenas executável!
 Encontre o Anti-Monopoly.exe na pasta executáveis e execute-o como qualquer outro programa.
 
 ```sh
-https://github.com/DudaLucenaMiguel/Anti-Monopoly/blob/main/src/Frontend/Build/Anti-Monopoly.exe
+https://github.com/DudaLucenaMiguel/Anti-Monopoly/blob/main/Executavel/Anti-Monopoly.exe
 ```
 
 ## 💻 Configuração para Desenvolvimento
