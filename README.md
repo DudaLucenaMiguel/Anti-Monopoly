@@ -63,10 +63,6 @@ https://github.com/DudaLucenaMiguel/Anti-Monopoly/blob/main/Executavel/Anti-Mono
 
 Para abrir este projeto, você necessita apenas da pasta de executável
 
-```sh
-https://github.com/DudaLucenaMiguel/Anti-Monopoly/tree/main/Executavel
-```
-
 ## 🗃 Histórico de lançamentos
 
 * 1.0 -15/03/2024
