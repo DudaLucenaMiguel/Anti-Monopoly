@@ -1,0 +1,8 @@
+Nome: Anti-Monopoly
+
+Descrição:
+
+Anti-Monopoly é um jogo de fases com duas etapas. A primeira é um mapa de exploraçao e combate de um numero delimitado de inimigos que patrulham a região e cabe a você ir atrás. A segunda é um mapa de resistencia do Boss, onde enfrenta-se alguns elementos e desafios para sobreviver por uma quantidade delimitade de turnos.
+
+Tags: aventura, exploração, combate, inimigos, resistencia, tempo
+
