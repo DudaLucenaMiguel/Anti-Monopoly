@@ -45433,6 +45433,10 @@ PrefabInstance:
       propertyPath: danoCausado
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8060129470520296401, guid: b5e99abe9e3ecdd469c3f7e6a3357a08, type: 3}
+      propertyPath: frequenciaDeTiro
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8347968309836380778, guid: b5e99abe9e3ecdd469c3f7e6a3357a08, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

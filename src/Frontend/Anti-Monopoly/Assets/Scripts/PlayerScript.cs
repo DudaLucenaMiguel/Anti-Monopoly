@@ -1,3 +1,4 @@
+using Cinemachine.Utility;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -6,6 +7,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -30,6 +32,9 @@ public class PlayerScript : MonoBehaviour
     public float frequenciaDeTiro = 0;
     [System.NonSerialized] public float timer;
     public BarraDeTiroScript barraDeTiro;
+    public LineRenderer linhaDeFogo;
+    public Transform Base;
+    Vector3 alvo;
 
     //variaveis de vida
     public int vidaMaxima = 100;
@@ -42,8 +47,10 @@ public class PlayerScript : MonoBehaviour
 
     private void Awake()
     {
+        Base = GameObject.Find("Base").transform;
         CC = GetComponent<CharacterController>();
         origem = GameObject.Find("OrigemDoPlayer").transform;
+        linhaDeFogo = GameObject.Find("LinhaDeFogo").GetComponent<LineRenderer>();
     }
     void Start()
     {
@@ -56,7 +63,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            Mirar();
+            Girar();
         }
         else
         {
@@ -66,7 +73,7 @@ public class PlayerScript : MonoBehaviour
         Atirar();
         GerenciarVida();
         ResetarPosicao();
-
+        Mirar();
 
     }
     public void Movimentar()
@@ -89,11 +96,29 @@ public class PlayerScript : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, angle, 0);
         }
     }
-    void Mirar()
+    void Girar()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
 
         transform.Rotate(Vector3.up, horizontalInput * velocidadeDeGiro * Time.deltaTime);
+    }
+    void Mirar()
+    {
+        alvo = Base.position + Base.forward * distanciaMaximaDoProjetil;
+        linhaDeFogo.positionCount = 2;
+        linhaDeFogo.SetPosition(0, Base.transform.position);
+        linhaDeFogo.SetPosition(1, alvo);
+
+        linhaDeFogo.alignment = LineAlignment.View;
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            linhaDeFogo.enabled = true;
+        }
+        else
+        {
+            linhaDeFogo.enabled = false;
+        }
     }
     void Atirar()
     {
@@ -137,6 +162,28 @@ public class PlayerScript : MonoBehaviour
             gameObject.transform.position = origem.transform.position;
             gameObject.transform.rotation = origem.transform.rotation;
             voltarAOrigem = false;
+        }
+        
+    }
+    public void AlcanceMaximo(bool ativarAlcanceMaximo)
+    {
+        Vector3 aFrente = gatilho.position + gatilho.forward * 300;
+        RaycastHit hitInfo;
+        bool hasHit = Physics.Raycast(gatilho.position, aFrente, out hitInfo, Mathf.Infinity);
+
+        if(hitInfo.distance < distanciaMaximaDoProjetil && ativarAlcanceMaximo == false)
+        {
+            distanciaMaximaDoProjetil = hitInfo.distance;
+        }
+        else
+        {
+            distanciaMaximaDoProjetil = 10;
+        }
+
+        if (hasHit && ativarAlcanceMaximo == true)
+        {
+                distanciaMaximaDoProjetil = hitInfo.distance;
+                Debug.DrawRay(gatilho.position, hitInfo.point, Color.red);
         }
         
     }

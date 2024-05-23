@@ -31,6 +31,7 @@ public class ControleDosInimgiosScript : MonoBehaviour
     {
         GerenciarInimigos();
         ContadorDeInimgios();
+        playerScript.AlcanceMaximo(false);
     }
     void CaptarInimigos()
     {

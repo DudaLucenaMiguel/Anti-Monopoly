@@ -227,7 +227,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2570972999919172658, guid: bca99bf2785ad55479bdebed75cf47ea, type: 3}
       propertyPath: m_Name
-      value: AgenteSpawn (2)
+      value: AgenteSpawn
       objectReference: {fileID: 0}
     - target: {fileID: 3617760017149641468, guid: bca99bf2785ad55479bdebed75cf47ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -325,7 +325,7 @@ MonoBehaviour:
   velocidadeDeGiro_: 50
   velocidadeDoAgente_: 5
   velocidadeDoAtaque_: 20
-  alcanceDoAtaque_: 10
+  alcanceDoAtaque_: 30
   distanciaMinimaParaAtacar_: 50
   frequenciaDoTiro_: 2
   mirarNoPlayer: 1
@@ -694,7 +694,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2570972999919172658, guid: bca99bf2785ad55479bdebed75cf47ea, type: 3}
       propertyPath: m_Name
-      value: AgenteSpawn (3)
+      value: AgenteSpawn
       objectReference: {fileID: 0}
     - target: {fileID: 3617760017149641468, guid: bca99bf2785ad55479bdebed75cf47ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1257,7 +1257,7 @@ Transform:
   m_GameObject: {fileID: 869137286}
   serializedVersion: 2
   m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 0, y: 80, z: -75}
+  m_LocalPosition: {x: 0, y: 45, z: -60}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1594,6 +1594,10 @@ PrefabInstance:
       propertyPath: origem
       value: 
       objectReference: {fileID: 1817182441}
+    - target: {fileID: 8060129470520296401, guid: b5e99abe9e3ecdd469c3f7e6a3357a08, type: 3}
+      propertyPath: frequenciaDeTiro
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8347968309836380778, guid: b5e99abe9e3ecdd469c3f7e6a3357a08, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1688,7 +1692,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2570972999919172658, guid: bca99bf2785ad55479bdebed75cf47ea, type: 3}
       propertyPath: m_Name
-      value: AgenteSpawn (1)
+      value: AgenteSpawn
       objectReference: {fileID: 0}
     - target: {fileID: 3617760017149641468, guid: bca99bf2785ad55479bdebed75cf47ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1878,7 +1882,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0e320280e7fadc249963957a2bbffb12, type: 2}
+  - {fileID: 2100000, guid: f9b719c18a10dbd4bb0b8b10c10b4248, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2176,7 +2180,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0e320280e7fadc249963957a2bbffb12, type: 2}
+  - {fileID: 2100000, guid: f9b719c18a10dbd4bb0b8b10c10b4248, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2448,7 +2452,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0e320280e7fadc249963957a2bbffb12, type: 2}
+  - {fileID: 2100000, guid: f9b719c18a10dbd4bb0b8b10c10b4248, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2553,7 +2557,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0e320280e7fadc249963957a2bbffb12, type: 2}
+  - {fileID: 2100000, guid: f9b719c18a10dbd4bb0b8b10c10b4248, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2598,6 +2602,10 @@ PrefabInstance:
     - target: {fileID: 2124804871103706411, guid: 6572baf82c2b2b74d8dcf072099847e7, type: 3}
       propertyPath: m_Name
       value: ControleDeScenes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2124804871103706411, guid: 6572baf82c2b2b74d8dcf072099847e7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4628877419261233462, guid: 6572baf82c2b2b74d8dcf072099847e7, type: 3}
       propertyPath: m_Pivot.x
@@ -3514,9 +3522,17 @@ PrefabInstance:
       propertyPath: quantidadeDeTurnos
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 641755411661263205, guid: e210a1860a50d484f9e4590c29d1e2d0, type: 3}
+      propertyPath: tempoDeAtaqueDoBoss
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1628286786952630027, guid: e210a1860a50d484f9e4590c29d1e2d0, type: 3}
       propertyPath: m_Name
       value: ControleDeFaseBoss
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628286786952630027, guid: e210a1860a50d484f9e4590c29d1e2d0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8420218834075434340, guid: e210a1860a50d484f9e4590c29d1e2d0, type: 3}
       propertyPath: m_LocalPosition.x

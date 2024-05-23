@@ -81,7 +81,8 @@ public class ControleDeFaseScript : MonoBehaviour
     void Start()
     {
         playerScript.danoSofrido = 0;
-        playerScript.distanciaMaximaDoProjetil = 200;
+        //playerScript.distanciaMaximaDoProjetil = 200;
+        
 
         playerScript.vidaMaxima = quantidadeDeTurnos;
         playerScript.vidaAtual = quantidadeDeTurnos;
@@ -98,6 +99,7 @@ public class ControleDeFaseScript : MonoBehaviour
         Reagir();
         GerenciarJogo();
         Caiu();
+        playerScript.AlcanceMaximo(true);
     }  
     void InvocarAgentesEBarreiras()
     {

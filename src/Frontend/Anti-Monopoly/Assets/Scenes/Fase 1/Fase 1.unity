@@ -4524,6 +4524,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127453989}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &133653775 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7104017041689015320, guid: b5e99abe9e3ecdd469c3f7e6a3357a08, type: 3}
+  m_PrefabInstance: {fileID: 1244680524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &139033508
 GameObject:
   m_ObjectHideFlags: 0
@@ -15562,6 +15567,7 @@ Transform:
   - {fileID: 629152673}
   - {fileID: 1478470488}
   - {fileID: 1033359063}
+  - {fileID: 1073058240}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &542622728
@@ -29005,12 +29011,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073058239}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.16666667, z: -5}
+  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 542622727}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1077969188
 GameObject:
@@ -33273,6 +33279,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8060129470520296401, guid: b5e99abe9e3ecdd469c3f7e6a3357a08, type: 3}
+      propertyPath: Base
+      value: 
+      objectReference: {fileID: 133653775}
     - target: {fileID: 8060129470520296401, guid: b5e99abe9e3ecdd469c3f7e6a3357a08, type: 3}
       propertyPath: barraDeTiro
       value: 
@@ -60023,13 +60033,12 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1833190383}
   - {fileID: 1581088760}
   - {fileID: 849739131}
-  - {fileID: 1073058240}
   - {fileID: 542622727}
+  - {fileID: 1393713346}
   - {fileID: 1244680524}
   - {fileID: 129355130542317920}
-  - {fileID: 66305133}
   - {fileID: 1258594000}
-  - {fileID: 1833190383}
-  - {fileID: 1393713346}
+  - {fileID: 66305133}
