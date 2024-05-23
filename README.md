@@ -53,7 +53,7 @@ Emblema by <a href=" ">Duda Lucena Miguel</a>
 <b>Windows:</b>
 
 Não há instalação! Apenas executável!
-Encontre o Anti-Monopoly.exe na pasta executáveis e execute-o como qualquer outro programa.
+Encontre o Anti-Monopoly.exe na pasta executavel e execute-o como qualquer outro programa.
 
 ```sh
 https://github.com/DudaLucenaMiguel/Anti-Monopoly/blob/main/Executavel/Anti-Monopoly.exe
@@ -61,9 +61,11 @@ https://github.com/DudaLucenaMiguel/Anti-Monopoly/blob/main/Executavel/Anti-Mono
 
 ## 💻 Configuração para Desenvolvimento
 
-Para abrir este projeto você necessita das seguintes ferramentas:
+Para abrir este projeto você necessita apenas da pasta de execuavel
 
--<a href="https://itch.io/">itch.io</a>
+```sh
+https://github.com/DudaLucenaMiguel/Anti-Monopoly/tree/main/Executavel
+```
 
 ## 🗃 Histórico de lançamentos
 
