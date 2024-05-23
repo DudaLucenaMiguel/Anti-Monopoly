@@ -8,16 +8,16 @@
 
 ## Anti-Monopoly
 
-## Integrantes: <a href="https://github.com/DudaLucenaMiguel">Duda Lucena Miguel</a>, <a href=" ">Marcus Vinicius Miranda Duque</a>, <a href=" ">Otavio Vecchi Zeferino</a>, <a href=" ">Victor Luongo Gouveia</a>
+## Integrantes: <a href="https://github.com/DudaLucenaMiguel">Duda Lucena Miguel</a>, <a href="https://github.com/marcusduquee">Marcus Vinicius Miranda Duque</a>, <a href=" ">Otavio Vecchi Zeferino</a>, <a href="https://github.com/victorluongoo">Victor Luongo Gouveia</a>
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosetti de Quiroz</a>, <a href=" ">Fabiano Alves Onça</a> 
 
 ## Descrição
 
 <p align="center">
-<img src="https://private-user-images.githubusercontent.com/163124218/332245020-3a2caa3b-8e8b-4682-9fe8-644773729045.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTYyNTQ1MDEsIm5iZiI6MTcxNjI1NDIwMSwicGF0aCI6Ii8xNjMxMjQyMTgvMzMyMjQ1MDIwLTNhMmNhYTNiLThlOGItNDY4Mi05ZmU4LTY0NDc3MzcyOTA0NS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUyMVQwMTE2NDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNzE2NTZkMmQ4ZmRhODI0NjViZmUzM2JlMWVkNjUzNGQwYjhmYTdjYTRmNmYzNTNhYTBiODRkOTJhN2MwN2Y0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.oV2sIWmpVPoiJiJ_CipFkH7g0LIwjPzfN2jl2-uDzw8" alt="Anti-Monopoly" border="0"> </p>
-	Game by <a href=" ">Duda Lucena Miguel, Marcus Vinicius Miranda Duque, Otavio Vecchi Zeferino, Victor Luongo Gouveia</a> 
-</p>
+<img src="https://github.com/DudaLucenaMiguel/Anti-Monopoly/blob/main/src/Frontend/Anti-Monopoly/Assets/Imagens/Sprites%20Canva/Emblema.png" alt="Anti-Monopoly" border="0">
+<p align="center">
+Emblema by <a href=" ">Duda Lucena Miguel</a> 
 
 <br><br>
   	O projeto Anti-Monopoly tem como objetivo ilustrar, de maneira lúdica, a proposta de nosso grupo para resolução da ODS (Objetivos de Desenvolvimento Sustentável) de número 2 da ONU (Organização das Nações Unidas), Fome zero e agricultura sustentável. A ideia consciente em explorar medidas para combate do mono e oligopólios do agro negócio, com o fito de expropriar terras que não cumprem nenhuma função social ou econômica, apenas servem de ferramenta para especulação dos demais lotes, dispondo-os ao Estado que ofertará a sociedade civil para que trabalhem e nessas terras gerem riqueza, incentivando práticas de agricultura sustentáveis, junto com o abastecimento do mercado interno, aumentando a oferta de produtos, principalmente os alimentícios, assim projetando sua demanda. 
@@ -29,13 +29,24 @@
 -Raiz<br>
 |<br>
 |-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|Documentação.docx<br>
+	&emsp;|-->antigos<br>
+	&emsp;|Documentação.docx<br>
 |-->executáveis<br>
-  &emsp;|-->windows<br>
+	&emsp;|-->windows<br>
 |-->imagens<br>
 |-->src<br>
-  &emsp;|-->Frontend<br>
+	&emsp;|-->Frontend<br>
+  		&emsp;|-->Anti-Monopoly<br>
+   			&emsp;&emsp;|-->Assets<br>
+   				&emsp;&emsp;&emsp;|-->Fontes de Texto<br>
+     				&emsp;&emsp;&emsp;|-->Imagens<br>
+       				&emsp;&emsp;&emsp;|-->Materiais<br>
+	 			&emsp;&emsp;&emsp;|-->PreFabs<br>
+   				&emsp;&emsp;&emsp;|-->Scenes<br>
+     				&emsp;&emsp;&emsp;|-->Scripts<br>	
+   		&emsp;|-->Build<br>
+  			
+  
 |readme.md<br>
 
 ## 🛠 Instalação
@@ -46,7 +57,7 @@ Não há instalação! Apenas executável!
 Encontre o Anti-Monopoly.exe na pasta executáveis e execute-o como qualquer outro programa.
 
 ```sh
-Coloque código do prompt de comnando se for necessário
+https://github.com/DudaLucenaMiguel/Anti-Monopoly/blob/main/src/Frontend/Build/Anti-Monopoly.exe
 ```
 
 ## 💻 Configuração para Desenvolvimento
@@ -106,7 +117,20 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://www.youtube.com/>
-2. <https://www.blackbox.ai/>
-3. <https://brawlify.com/br/>
-4. <https://www.canva.com/>
+1. Tutoriais:<br>
+   &emsp;<https://www.youtube.com/watch?v=HQgJReq-E-U&t=3s><br>
+   &emsp;<https://www.youtube.com/watch?v=flkQApNITmE><br>
+   &emsp;<https://www.youtube.com/watch?v=zUUJZ8tH5_k&t=69s><br>
+   &emsp;<https://www.youtube.com/watch?v=YNbuhDiaXg4><br>
+   &emsp;<https://www.youtube.com/watch?v=yIaAE9bLxXI><br>
+   &emsp;<https://www.youtube.com/watch?v=wg3RPMJXKw0&t=316s><br>
+   &emsp;<https://www.youtube.com/watch?v=o7-CHgwx0X0&t=1s><br>
+   &emsp;<https://www.youtube.com/watch?v=o7-CHgwx0X0&t=1s><br>
+   &emsp;<https://www.youtube.com/watch?v=mFdh-eO4hHc&t=2367s><br>
+   &emsp;<https://www.youtube.com/watch?v=ieyHlYp5SLQ><br>
+   &emsp;<https://www.youtube.com/watch?v=xHoRkZR61JQ&t=20s><br>
+3. Biblioteca de codigos: <https://www.blackbox.ai/><br>
+4. Confecção dos Mapas:<br>
+   &emsp;<https://brawlify.com/br/><br>
+   &emsp;<https://www.piskelapp.com/><br>
+6. Sprites: <https://www.canva.com/> <br>
