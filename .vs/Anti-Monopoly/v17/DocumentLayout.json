@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|c:\\users\\dudal\\onedrive\\\u00E1rea de trabalho\\anti-monopoly\\anti-monopoly\\assets\\scripts\\menuinicialscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menuinicialscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|c:\\users\\dudal\\onedrive\\\u00E1rea de trabalho\\anti-monopoly\\anti-monopoly\\assets\\scripts\\controledescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controledescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|c:\\users\\dudal\\onedrive\\\u00E1rea de trabalho\\anti-monopoly\\anti-monopoly\\assets\\scripts\\script fase do boss\\pojetildoboss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\script fase do boss\\pojetildoboss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|c:\\users\\dudal\\onedrive\\\u00E1rea de trabalho\\anti-monopoly\\anti-monopoly\\assets\\scripts\\script fase inicial\\projetildoinimigoscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\script fase inicial\\projetildoinimigoscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\assets\\scripts\\script fase do boss\\bossscrip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\script fase do boss\\bossscrip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|c:\\users\\dudal\\onedrive\\\u00E1rea de trabalho\\anti-monopoly\\anti-monopoly\\assets\\scripts\\ataquedoplayerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ataquedoplayerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|c:\\users\\dudal\\onedrive\\\u00E1rea de trabalho\\anti-monopoly\\anti-monopoly\\assets\\scripts\\script fase inicial\\inimgoscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D14908-4ED9-160D-0C79-A7DD425F4C88}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\script fase inicial\\inimgoscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuInicialScript.cs",
+              "DocumentMoniker": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\MenuInicialScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MenuInicialScript.cs",
+              "ToolTip": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\MenuInicialScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MenuInicialScript.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwDcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T22:31:56.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ControleDeScene.cs",
+              "DocumentMoniker": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\ControleDeScene.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ControleDeScene.cs",
+              "ToolTip": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\ControleDeScene.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ControleDeScene.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAkwFIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T22:31:39.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PojetilDoBoss.cs",
+              "DocumentMoniker": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\Script Fase do Boss\\PojetilDoBoss.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Script Fase do Boss\\PojetilDoBoss.cs",
+              "ToolTip": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\Script Fase do Boss\\PojetilDoBoss.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Script Fase do Boss\\PojetilDoBoss.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T22:03:18.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjetilDoInimigoScript.cs",
+              "DocumentMoniker": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\Script Fase Inicial\\ProjetilDoInimigoScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Script Fase Inicial\\ProjetilDoInimigoScript.cs",
+              "ToolTip": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\Script Fase Inicial\\ProjetilDoInimigoScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Script Fase Inicial\\ProjetilDoInimigoScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T22:02:22.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InimgoScript.cs",
+              "DocumentMoniker": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\Script Fase Inicial\\InimgoScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Script Fase Inicial\\InimgoScript.cs",
+              "ToolTip": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\Script Fase Inicial\\InimgoScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Script Fase Inicial\\InimgoScript.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T21:59:06.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AtaqueDoPlayerScript.cs",
+              "DocumentMoniker": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\AtaqueDoPlayerScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AtaqueDoPlayerScript.cs",
+              "ToolTip": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\AtaqueDoPlayerScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AtaqueDoPlayerScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T21:58:13.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BossScrip.cs",
+              "DocumentMoniker": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\Script Fase do Boss\\BossScrip.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Script Fase do Boss\\BossScrip.cs",
+              "ToolTip": "C:\\Users\\dudal\\OneDrive\\\u00C1rea de Trabalho\\Anti-Monopoly\\Anti-Monopoly\\Assets\\Scripts\\Script Fase do Boss\\BossScrip.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Script Fase do Boss\\BossScrip.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwDUAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T17:35:14.933Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

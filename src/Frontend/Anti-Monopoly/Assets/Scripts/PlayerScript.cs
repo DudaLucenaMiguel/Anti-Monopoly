@@ -22,6 +22,8 @@ public class PlayerScript : MonoBehaviour
     float valorDaGravidade = -9.81f;
     Vector3 gravidade;
 
+    public GameObject corpoDoPlayer;
+
     //variaveis de tiro
     public Transform gatilho;
     public GameObject projetilPreFab;
